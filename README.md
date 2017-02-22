@@ -58,7 +58,7 @@ Here're some API clients and/or wrappers:
 
 ### Custom Style
 
-Twbtc front-end based Bootstrap 3.0 version and Sass, and you can custom exchange style for your mind.
+Hitback front-end based Bootstrap 3.0 version and Sass, and you can custom exchange style for your mind.
 
 * change bootstrap default variables in `vars/_bootstrap.css.scss`
 * change peatio custom default variables in `vars/_basic.css.scss`
