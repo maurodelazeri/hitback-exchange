@@ -1,0 +1,217 @@
+# encoding: utf-8
+#
+# zh-TW custom
+zh-TW:
+  js:
+    brand: 比特幣台灣
+    submit: 提交
+    cancel: 取消
+    confirm: 確認
+    banks:
+       bktw: 004臺灣銀行
+       lbot: 005臺灣土地銀行
+       tacb: 006合作金庫商業銀行
+       fcbk: 007第一商業銀行
+       hnbk: 008華南商銀
+       ccbc: 009彰化商銀
+       scsb: 011上海儲蓄銀行
+       tpbk: 012台北富邦商銀
+       uwcb: 013國泰世華商銀
+       bkao: 016高雄銀行
+       icbc: 017兆豐商銀
+       citi: 021花旗銀行
+       anzb: 039澳盛（台灣）商業銀行
+       ibot: 048王道商銀
+       mbbt: 050臺灣中小企業銀行
+       scbl: 052渣打國際商業銀行
+       tcbb: 053台中商業銀行
+       tnbb: 054京城商業銀行
+       hsbc: 081滙豐商銀
+       botp: 101瑞興商銀
+       htbk: 102華泰商銀
+       mktb: 103臺灣新光商業銀行
+       suny: 108陽信商業銀行
+       bbbk: 118板信商業銀行
+       cobk: 147三信商業銀行
+       ubot: 803聯邦商業銀行
+       fein: 805遠東國際商業銀行
+       apbk: 806元大商業銀行
+       sino: 807永豐商業銀行
+       esun: 808玉山商業銀行
+       cdib: 809萬泰商業銀行
+       dbss: 810星展商銀
+       tsib: 812台新商銀
+       ourb: 814大眾商業銀行
+       jsib: 815日盛商銀
+       enti: 816安泰商銀
+       ctcb: 822中國信託商銀
+       ctcb: 016中華開發工業銀行
+       cdib: 040臺灣工業銀行
+       eroc: 015中國輸出入銀行
+       none: 018全國農業金庫
+    fund_sources:
+      manage_bank_account: 編輯銀行帳號
+      manage_bank_account_desc: 通過增加提款銀行帳戶，方便快速提款！
+      manage_coin_address: 編輯提幣地址
+      manage_coin_address_desc: 通過增加提幣地址，方便快速提幣!
+      bank: 銀行
+      account: 銀行帳號
+      label: 標籤
+      address: 地址
+      action: 執行
+      add: 增加
+      remove: 移除
+      default: 預設
+    funds:
+      deposit: 儲值
+      withdraw: 提款
+      currency_name:
+        cny: CNY
+        btc: BTC
+        ntd: NTD
+      deposit_cny:
+        title: 人民幣儲值
+        desc: "通過銀行轉賬匯款的方式，經人工審核後充值人民幣到您的交易賬戶中，流程如下："
+        desc_item_1: "1. 提交以下表單，獲得轉賬識別碼；"
+        desc_item_2: "2. 銀行轉賬匯款到雲幣交易所開戶行，務必在備註欄填寫識別碼；"
+        desc_item_3: "3. 人工審核匯款記錄，確認後充值到您的雲幣賬戶。"
+        attention: "特別提醒：充值銀行賬戶姓名必須與您的實名認證姓名一致。"
+        from: 匯款人
+        to: 收款人
+        deposit_name: 開戶戶名
+        deposit_account: 充值賬號
+        add: 添加
+        manage: 管理
+        amount: 充值金額
+        min_amount: 最低金額100元
+        to_account: 收款賬號
+        to_name: 收款賬戶
+        to_bank_name: 收款銀行
+        opening_bank_name: 開戶行
+      deposit_ntd:
+        title: 新台幣充值
+        desc: "通過銀行轉賬匯款的方式，經人工審核後充值新台幣到您的交易帳戶中，>流程如下："
+        desc_item_1: "1. 提交以下表單，獲得轉賬識別碼；"
+        desc_item_2: "2. 銀行轉帳匯款到比特幣台灣交易所開戶行，務必在備註欄填寫識別碼>；"
+        desc_item_3: "3. 人工審核匯款記錄，確認後充值到您的比特幣台灣幣帳戶。"
+        attention: "特別提醒：儲值銀行帳戶姓名必須與您的實名認證姓名一致。"
+        from: 匯款人
+        to: 收款人
+        deposit_name: 開戶戶名
+        deposit_account: 儲值賬號
+        add: 添加
+        manage: 管理
+        amount: 儲值金額
+        min_amount: 最低金額100元
+        to_account: 收款帳號
+        to_name: 收款帳戶
+        to_bank_name: 收款銀行
+        opening_bank_name: 開戶行
+      deposit_btc:
+        title: 比特幣充值
+      deposit_coin:
+        address: 地址
+        new_address: 生成新地址
+        open-wallet: 請使用您常用的錢包服務，本地錢包、在線錢包或移動端的錢包，選擇付款或發送。
+        detail: 在您的錢包付款或發款中，複製以下專門為您充值準備的⽐特幣地址，在金額中填入您希望充值到賬的數量，同時別忘記支付⼀定的礦⼯費以保證交易盡快被全網確認。您也可以在移動端錢包中掃瞄二維碼來進⾏行支付。 您可以重複使用此⽐特幣地址和二維碼進⾏行充值。
+        scan-qr: 在移動端錢包中掃瞄二維碼來進行支付。
+        after_deposit: 完成以上操作後點擊發送付款，此交易將被廣播到全網，您便可以這⾥查看到此筆交易的狀態，當交易達到全網1個確認 (⼤約10⾄至60分鐘) 時，系統將自動充值到賬。您可以到資產公開中查詢。
+        generate-new: 生成新地址
+      deposit_history:
+        title: 歷史記錄
+        identification: 轉賬識別碼
+        time: 時間
+        txid: 交易哈希
+        confirmations: 確認數
+        from: 儲值銀行
+        amount: 儲值金額
+        state_and_action: "狀態/操作"
+        cancel: 取消
+        no_data: 暫無歷史數據
+        submitting: 已提交
+        cancelled: 已撤銷
+        submitted: 受理中
+        accepted: 儲值成功
+        rejected: 已駁回
+        checked: 儲值成功
+        warning: 異常
+        suspect: 異常
+      withdraw_cny:
+        title: 人民幣提現
+        intro: 選擇提現銀行並輸入帳號和提取金額，完成提交。
+        intro_2: 您提現的銀行賬戶姓名必須和您實名認證的姓名一致。
+        attention: "提現服務時間：9:00 - 18:00 (18:00後的提現申請次日處理)"
+        account_name: 賬戶名
+        withdraw_address: 提現賬號
+        balance: 可用餘額
+        withdraw_amount: 提取數量
+        manage_withdraw: 管理提現賬號
+        fee_explain: 資費說明
+        min: 最低
+        withdraw_all: 全部提取
+      withdraw_ntd:
+        title: 新台幣提款
+        intro: 選擇提現銀行並輸入帳號和提取金額，完成提交。
+        intro_2: 您提現的銀行帳戶姓名必須和您實名認證的姓名一致。
+        attention: "提現服務時間：9:00 - 18:00 (18:00後的提現申請次日處理)"
+        account_name: 帳戶名
+        withdraw_address: 提款賬號
+        balance: 可用餘額
+        withdraw_amount: 提取數量
+        manage_withdraw: 管理提款賬號
+        fee_explain: 資費說明
+        min: 最低
+        withdraw_all: 全部提取
+      withdraw_btc:
+        title: 比特幣提現
+      withdraw_coin:
+        intro: 指定要提現的地址，輸入提取數量，提交即可，10分鐘之內到賬。
+        label: 標籤
+        balance: 可用餘額
+        amount: 提款數量
+        manage_withdraw: 管理提款地址
+        min: 最低
+        withdraw_all: 全部提取
+        fee_explain: 資費說明
+      withdraw_history:
+        title: 提款歷史
+        number: 編號
+        withdraw_time: 提款時間
+        withdraw_account: 提款帳戶
+        withdraw_address: 提款地址
+        withdraw_amount: 金額
+        actual_amount: 實際到帳
+        fee: 手續費
+        miner_fee: 礦工費
+        state_and_action: "狀態/操作"
+        cancel: 取消
+        no_data: 暫無歷史數據
+        submitting: 待確認
+        submitted: 待校驗
+        rejected: 已駁回
+        accepted: 已提交
+        suspect: 異常
+        processing: 受理中
+        coin_ready: 準備中
+        coin_done: 完畢
+        done: 提現成功
+        almost_done: 發送中
+        canceled: 已撤銷
+        failed: 提現出錯
+    auth:
+      please_active_two_factor: 為了您的資金安全, 請先綁定手機或設置兩步驗證。
+      submit: 確認
+      otp_placeholder: 6位數字密碼
+      google_app: 谷歌身份驗證器
+      sms: 手機短信驗證
+      send_code: 獲取驗證碼
+      send_code_alt: COUNT秒後重新發送
+      hints:
+        app: 谷歌驗證器每三十秒會重新生成新密碼，請及時輸入。
+        sms: 請點擊「獲取驗證碼」按紐，我們將會把驗證碼以短信的方式發到您的手機上。
+    markets:
+      market_list:
+        all: 全部交易對
+        cny: CNY交易對
+        btc: BTC交易對
+        ntd: NTD交易對

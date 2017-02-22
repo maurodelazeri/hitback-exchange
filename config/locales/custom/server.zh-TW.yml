@@ -1,0 +1,1862 @@
+# encoding: utf-8
+#
+# zh-TW custom
+
+zh-TW:
+  activerecord:
+    models:
+      api_tokens: API Token
+      trade: 交易
+      order: 掛單
+      order_bid: 買入
+      order_ask: 賣出
+      document: 文檔
+      withdraw: 提現
+      deposit: 充值
+      payment_transaction: 充值
+      id_document: 實名認證
+      statistic/orders_grid: 指令統計
+      statistic/trades_grid: 交易統計
+      statistic/members_grid: 用戶統計
+      statistic/deposits_grid: 充值統計
+      statistic/withdraws_grid: 提現統計
+      admin/deposits_grid: 充值管理
+      admin/withdraws_grid: 提現管理
+      deposits/bank: 銀行轉賬
+      withdraws/bank: 銀行轉賬
+      withdraws/satoshi: 銀行轉賬
+    attributes:
+      api_token:
+        access_key: Access Key
+        trusted_ip_list: IP白名單
+        ip_whitelist: IP白名單
+        label: 標籤
+        actions: 操作
+      identity:
+        email: 郵箱地址
+        password: 新密碼
+        password_confirmation: 確認密碼
+      document:
+        zh_tw_body: 中文內容
+        zh_tw_title: 中文標題
+        zh_tw_desc: 中文描述
+        zh_tw_keywords: 中文關鍵字
+        en_body: 英文內容
+        en_title: 英文標題
+        en_desc: 英文描述
+        en_keywords: 英文關鍵字
+        key: 索引鍵
+        is_auth: 是否登錄查閱
+      fund_source:
+        address: 提現地址
+        category: 提現方式
+        label: 標籤
+      account:
+        currency: 幣種
+        currency_text: 幣種
+        balance_and_locked: 餘額 / 凍結
+        balance: 餘額
+        locked: 凍結
+      deposit:
+        state: 狀態
+        tx_id: TxID
+        member_id: 用戶 ID
+        created_at: 提交時間
+        address: 地址
+        amount: 充值金額
+        done_at: 完成時間
+        sn: SN
+      withdraw:
+        id: ID
+        sn: SN
+        withdraw_id: ID
+        created_at: 創建時間
+        done_at: 完成時間
+        sum: 總金額
+        fee: 手續費
+        currency: 幣種
+        amount: 提現金額
+        address: 地址
+        state: 狀態
+        state_text: 狀態
+        tx_id: TxID
+        fund_source_id: 提現地址
+        detail: 詳情
+      account_version:
+        id: 編號
+        locked: 凍結
+        amount: 金額
+        balance: 餘額
+        reason: 原因
+        reason_text: 原因
+        modifiable_id: 相關編號
+        modifiable_type: 關聯
+        created_at: 創建日期
+        in: 收入
+        out: 支出
+        fee: 手續費
+      token/reset_password:
+        email: 郵箱地址
+        member: 會員
+      trade:
+        bid: 買入
+        ask: 賣出
+        fee: 手續費
+        price: 成交價
+        volume: 成交量
+        category: 買/賣
+        order: 訂單
+      order:
+        bid: 買入
+        ask: 賣出
+        price: 價格
+        total: 總價
+        volume: 數量
+        origin_volume: 數量
+        sum: 總價
+        category: 買/賣
+        kind: 類別
+        at: 時間
+        id: 編號
+        state: 狀態
+        operation: 操作
+      payment_transaction:
+        at: 時間
+        txid: 交易編號
+        amount: 金額
+        confirmations: 確認數
+        state: 狀態
+        state_done: 完成
+        state_wait: 等待
+      member:
+        id: 編號
+        name: 真實姓名
+        display_name: 論壇暱稱
+        email: 郵件地址
+        created_at: 註冊時間
+        sn: 個人識別碼
+        id_document_number: 身份證號碼
+        tag_list: 標籤
+        activated: 激活成功
+        activated?: "郵件激活"
+        id_document_verified?: "實名認證"
+        two_factor_activated?: "二次驗證"
+        phone_number: 手機號碼
+      two_factor/sms:
+        country: 國家
+        phone_number: 手機號碼
+        otp: 驗證碼
+      withdraws/bank:
+        id: 提現編號
+        member_name: 用戶
+        currency_obj_key_text: 幣種
+        state_and_actions: 狀態/操作
+        fund_source: 提現銀行
+        fund_extra: 銀行
+        fund_extra_text: 提現銀行
+        fund_uid: 提現銀行賬戶
+        sum: 提現金額
+        fee: 手續費
+        amount: 提現金額
+        remark: 備註
+        created_at: 時間
+      deposits/bank:
+        created_at: 時間
+        holder: 持卡人姓名
+        fund_extra: 轉賬銀行
+        fund_uid: 轉賬賬號
+        member_sn: 個人識別碼
+        member_name: 開戶戶名
+        amount: 充值金額
+        sn: 轉賬備註（必填）
+        state_and_action: 狀態 / 操作
+        label: 標籤
+        fund_source: 充值賬號
+      deposits/satoshi:
+        created_at: 時間
+        txid: 交易哈希
+        amount: 充值數量
+        confirmations: 確認數
+        aasm_state_text: 狀態
+      withdraws/satoshi:
+        id: 提現編號
+        member_name: 用戶
+        currency_obj_key_text: 幣種
+        state_and_actions: 狀態/操作
+        fund_extra_text: 提現標籤
+        fund_extrat: Label
+        fund_source: 提現標籤/地址
+        fund_uid: 提現地址
+        created_at: 時間
+        sum: 數量
+        amount: 金額
+        remark: 備註
+        fee: 手續費
+    errors:
+      models:
+        order_bid:
+          attributes:
+            sum:
+              expensive: 賬戶餘額不足
+            price:
+              range: 請指定適當的價格
+        order_ask:
+          attributes:
+            origin_volume:
+              expensive: 賬戶餘額不足
+            price:
+              range: 請指定適當的價格
+        account:
+          attributes:
+            balance:
+              less: 您的賬戶餘額不足
+        token/reset_password:
+          attributes:
+            base:
+              too_soon: 訪問過於頻繁，請稍後再試。
+            email:
+              not-member: 請輸入有效的郵箱地址。
+              match: 登錄郵件地址錯誤。
+            password:
+              invalid: 密碼格式錯誤
+            member:
+              blank: 不存在
+        activation:
+          attributes:
+            base:
+              too_soon: 距離上次給您發送激活郵件還未超過5分鐘
+        fund_source:
+          attributes:
+            address:
+              satoshi_ismine: 為系統所有，請使用您所擁有的提現地址進行綁定。
+              satoshi_invalid: 格式無效，請填寫正確的比特幣提現地址。
+        withdraw:
+          account_balance_is_poor: 賬戶餘額不足，請核對。
+          attributes:
+            password:
+              match: 密碼不匹配
+            amount:
+              poor: 熱錢包金額不足
+              bank_min: 小於 5000.00
+        withdraws/satoshi:
+          attributes:
+            fund_uid:
+              blank: 請輸入您的提現地址。
+              invalid: 無效的提現地址，請核對。
+              ismine: 提現地址為系統所有，請更換其他地址。
+        two_factor:
+          attributes:
+            otp:
+              invalid: 密碼有誤，請重新輸入。
+        application:
+          attributes:
+            redirect_uri:
+              fragment_present: cannot contain a fragment.
+              invalid_uri: must be a valid URI.
+              relative_uri: must be an absolute URI.
+      messages:
+        invalid_email: 無效的郵件地址
+        undef: 未知錯誤原因
+        less: 餘額不足
+        verify: 驗證失敗
+        strength: 無效的密碼強度
+        password: 請輸入至少6位密碼, 建議包含大寫、小寫字母與數字。
+        orders:
+          price: 價格限額 %{l} ~ %{h}
+          sum: 掛單總限額 %{l} ~ %{h}
+          precision: 最低精度為 %{p}
+  banks:
+    bktw: 004臺灣銀行
+    lbot: 005臺灣土地銀行
+    tacb: 006合作金庫商業銀行
+    fcbk: 007第一商業銀行
+    hnbk: 008華南商銀
+    ccbc: 009彰化商銀
+    scsb: 011上海儲蓄銀行
+    tpbk: 012台北富邦商銀
+    uwcb: 013國泰世華商銀
+    bkao: 016高雄銀行
+    icbc: 017兆豐商銀
+    citi: 021花旗銀行
+    anzb: 039澳盛（台灣）商業銀行
+    ibot: 048王道商銀
+    mbbt: 050臺灣中小企業銀行
+    scbl: 052渣打國際商業銀行
+    tcbb: 053台中商業銀行
+    tnbb: 054京城商業銀行
+    hsbc: 081滙豐商銀
+    botp: 101瑞興商銀
+    htbk: 102華泰商銀
+    mktb: 103臺灣新光商業銀行
+    suny: 108陽信商業銀行
+    bbbk: 118板信商業銀行
+    cobk: 147三信商業銀行
+    ubot: 803聯邦商業銀行
+    fein: 805遠東國際商業銀行
+    apbk: 806元大商業銀行
+    sino: 807永豐商業銀行
+    esun: 808玉山商業銀行
+    cdib: 809萬泰商業銀行
+    dbss: 810星展商銀
+    tsib: 812台新商銀
+    ourb: 814大眾商業銀行
+    jsib: 815日盛商銀
+    enti: 816安泰商銀
+    ctcb: 822中國信託商銀
+    ctcb: 016中華開發工業銀行
+    cdib: 040臺灣工業銀行
+    eroc: 015中國輸出入銀行
+    none: 018全國農業金庫
+  market:
+    currency:
+      ntd: TWD
+      btc: BTC
+      cny: CNY
+      doge: DOGE
+      pts: PTS
+      ltc: LTC
+  currency:
+    satoshi:
+      key: BTC
+      code: BTC
+      name: 比特幣
+      format: '0,0.0000'
+    bitsharesx:
+      key: BTS
+      code: BTSX
+      name: 比特股
+      format: '0,0.0000'
+    renminbi:
+      key: CNY
+      code: CNY
+      name: 人民幣
+      format: '0,0.00'
+    newtaibi:
+      key: NTD
+      code: NTD
+      name: 新臺幣
+      format: '0,0.00'
+    dogecoin:
+      key: DOG
+      code: DOGE
+      name: 狗狗幣
+      format: '0,0.0000'
+    protoshare:
+      key: PTS
+      code: PTS
+      name: 原型股
+      format: '0,0.0000'
+  datagrid:
+    empty: 沒有任何數據查詢結果
+    filters:
+      date:
+        range_separator: " ~ "
+      datetime:
+        range_separator: " ~ "
+    form:
+      submit: 查詢
+    admin_deposits_grid:
+      columns:
+        sn: 充值編號
+        created_at: 時間
+        channel_key_text: 通道
+        fund_extra_text: 資金來源
+        fund_uid: 資金賬戶
+        txid: 交易
+        amount: 金額
+        fee: 手續費
+        currency_text: 幣種
+        aasm_state_text: 狀態
+        member_name: 會員
+    bank_deposits_grid:
+      columns:
+        sn: 充值編號
+        created_at: 充值時間
+        channel_key_text: 充值方式
+        fund_extra_text: 開戶行
+        fund_uid: 充值賬戶
+        amount: 充值金額
+        fee: 手續費
+        aasm_state_text: 狀態
+    coin_deposits_grid:
+      columns:
+        sn: 充值編號
+        txid: 交易編號
+        created_at: 提交時間
+        amount: 充值金額
+        aasm_state_text: 狀態
+        confirmations: 確認數
+    withdraws_grid:
+      columns:
+        sn: SN
+        name: 姓名
+        currency_text: 幣種
+        amount: 實到金額
+        fee: 手續費
+        created_at: 提現時間
+        done_at: 完成時間
+        state_text: 狀態
+    members_grid:
+      columns:
+        sn: 識別碼
+        email: 郵件地址
+        created_at: 註冊時間
+        actions: 操作
+    account_versions_grid:
+      columns:
+        created_at: 時間
+        currency_text: 賬戶
+        balance: 餘額變更
+        in: 收入
+        out: 支出
+        amount: 結餘
+        reason_text: 理由
+        modifiable_type: 業務
+        fee: 手續費
+      filters:
+        reason: 分類
+        currency: 幣種
+    statistic_members_grid:
+      columns:
+        sn: 識別碼
+        id: 編號
+        email: 郵件地址
+        created_at: 註冊時間
+        activated: 激活
+        detail: 詳情
+        action: 操作
+      filters:
+        sn: 識別碼
+        activated: 是否激活
+        created_at: 註冊時間
+        email: 郵件地址
+    statistic_orders_grid:
+      columns:
+        id: 編號
+        price: 價格
+        volume: 成交量/掛單量
+        created_at: 掛單時間
+        state_text: 狀態
+        member_id: 用戶
+      filters:
+        state: 狀態
+        currency: 幣種對
+        created_at: 時間
+        type: 買入/賣出
+    statistic_trades_grid:
+      columns:
+        id: 編號
+        price: 成交價
+        volume: 成交量
+        strike_amount: 合計
+        created_at: 時間
+      filters:
+        currency: 幣種對
+        created_at: 時間
+    statistic_deposits_grid:
+      columns:
+        member: 用戶
+        tx_id: 交易號
+        amount: 金額
+        currency: 幣種
+        created_at: 時間
+        state_text: 狀態
+      filters:
+        currency: 幣種
+        state: 狀態
+        created_at: 時間
+    statistic_withdraws_grid:
+      columns:
+        member: 用戶
+        address: 支付地址
+        amount: 金額
+        currency: 幣種
+        created_at: 時間
+        state_text: 狀態
+      filters:
+        state: 狀態
+        created_at: 時間
+  deposit_channel:
+    bank:
+      key: 銀行轉賬
+      title: 銀行轉賬充值
+      intro: 通過銀行轉賬的方式，從您的銀行賬戶充值人民幣到您的比特幣台灣賬戶。
+      latency: 10 分鐘到賬
+      transfer: 人工處理
+      go: 立即充值
+    satoshi:
+      key: 塊鏈
+      title: 比特幣充值
+      intro: 從本地錢包客戶端或任意在線錢包客戶端轉出比特幣到我們為您提供的充值地址。
+      latency: 10 分鐘到賬
+      transfer: 自動
+      go: 立即充值
+  deposits/bank:
+    aasm_state:
+      submitting: 已提交
+      cancelled: 已撤銷
+      submitted: 受理中
+      accepted: 充值成功
+      rejected: 已駁回
+      checked: 充值成功
+      warning: 異常
+  private:
+    deposits:
+      satoshis:
+        gen_address:
+          require_transaction: 當前地址沒有使用過之前不能生成新地址
+      banks:
+        destroy:
+          notice: 撤銷充值請求成功。
+        create:
+          notice: 您的充值訂單提交成功，請按照提示繼續完成您的轉賬操作。
+          submit: 提交
+        new:
+          fund_source: 充值賬號
+          manage_fund_source: 管理充值賬號
+          submit: 提交
+        edit:
+          bank: 收款銀行
+          branch: 收款開戶行
+          hodler: 收款賬號
+          account: 收款賬號
+    fund_sources:
+      index:
+        manage_coin_address: 管理 %{name} 地址
+        manage_bank_account: 管理銀行賬號
+        guide_intro_coin: 通過增加%{name}提現地址，以便每次提現時快速選擇。
+        guide_intro_bank: 通過增加提現銀行賬號，以便每次提現時快速選擇。
+        new: 新建
+        currency: 幣種
+        bank: 銀行
+        label: 標籤
+        account: 賬號
+        address: 地址
+        action: 操作
+        delete: 移除
+        are_you_sure: 確定移除以保存的地址?
+      new:
+        selector: 銀行
+        uid: 賬號
+        label: 標籤
+        label_placeholder: 任意填寫
+        address: 地址
+        extra_hint: 若您的開戶銀行不再列表中，請聯繫客服
+    history:
+      transaction:
+        Deposit: 充值
+        Withdraw: 提現
+      account:
+        buy: 買入
+        sell: 賣出
+        filter_by_type: 查詢類型
+        account_history: 賬戶記錄
+        type: 類型
+        timestamp: 時間
+        fee: 手續費
+        currency: 貨幣
+        amount: 金額
+        txid: 交易哈希
+      orders:
+        order_history: 委託記錄
+        id: ID
+        type: 類型
+        state: 狀態
+        market: 貨幣對
+        price: 委託價
+        volume: 委託數量
+        average_price: 平均成交價
+        fullfilled_volume: 成交數量
+        timestamp: 委託時間
+      order:
+        ask: 賣出
+        bid: 買入
+        wait: 待成交
+        cancel: 已取消
+        done: 已成交
+      trades:
+        trade_history: 成交記錄
+        side: 類型
+        created_at: 時間
+        base_currency: 基準貨幣
+        base_amount: 數量
+        quote_currency: 報價貨幣
+        quote_amount: 數量
+        price: 成交價
+      trade:
+        sell: 賣出
+        buy: 買入
+    trade:
+      trades:
+        orders:
+          title: 掛單記錄
+        trades:
+          title: 交易記錄
+        charges:
+          title: 充值記錄
+      orders:
+        index:
+          done: 已成交
+          cancel: 撤單
+          confirm: '確定要進行撤單 #%{id} 嗎？'
+        destroy:
+          'true': "#%{id} 撤單成功"
+          'false': "#%{id} 撤單失敗"
+    withdraws:
+      update:
+        request_accepted: 提現申請提交成功
+      destroy:
+        request_canceled: 提現申請已撤銷
+      index:
+        fee: 手續費
+        total: 總計
+        withdraw_history: 提現歷史記錄
+      create:
+        two_factors_error: 兩步驗證失敗
+      banks:
+        update:
+          notice: 銀行轉賬提現申請已提交，我們將盡快為您處理。
+          alert_two_factor: 兩步驗證錯誤
+        destroy:
+          notice: 銀行轉賬提現申請已撤銷，凍結金額已退回到您的賬戶中。
+        new:
+          fund_source: 提現賬號
+          manage_fund_source: 管理提現賬號
+          submit: 提交
+          allin: 全部提取
+        create:
+          notice: 您的提現請求提交成功，請按照提示繼續完成您的轉賬操作。
+      satoshis:
+        destroy:
+          notice: 提現申請已被撤銷，凍結餘額已返還到您的賬戶
+        update:
+          notice: 提現申請成功，我們會盡快處理您的請求
+          alert_two_factor: 兩步驗證錯誤
+        new:
+          submit: 提交
+          allin: 全部提取
+          fund_source_label: 標籤
+          manage_fund_source: 管理提現地址
+        create:
+          notice: 您的提現請求提交成功，請按照提示繼續完成您的轉賬操作。
+    tickets:
+      index:
+        new_ticket: 新建服務單
+      new:
+        intro: 如果您有任何問題，意見或建議需要和我們溝通，請給我們建立一個服務單，我們會盡快回復您。
+      ticket_create_succ: 服務單創建成功。
+      ticket_create_fail: 服務單創建失敗, 請稍候再試。
+      comment_succ: 回復成功。
+      cooment_fail: 服務單創建失敗, 請稍候再試。
+      me: 我
+      supporter: 客服
+      close: 關閉服務單
+      close_succ: 服務單已關閉
+      close_confirm: 您確定要關閉這個服務單嗎？
+      title_content_both_blank: 標題和描述至少要填寫一個哦！
+      from: 來自
+      view_closed_tickets: 查看已結束的服務單
+      view_open_tickets: 查看未結束的服務單
+    account_versions:
+      index:
+        description: 每一筆交易、每一分錢收入都是有據可查，鉅細無遺的。
+    api_tokens:
+      user_tokens:
+        no_token: 沒有API密鑰
+        edit: 編輯
+        destroy: 刪除
+        destroy-confirm: 密鑰刪除之後無法找回，您確認要繼續嗎？
+        create: 創建新密鑰
+        http: HTTP API 文檔
+        websocket: Websocket API 文檔
+        more: '更多API信息請查看Github上的API章節：'
+      oauth_tokens:
+        panel_title: 應用綁定
+        title: 已綁定的第三方應用
+        oauth: OAuth認證接口文檔
+        intro: 管理所有您綁定過的第三方應用。
+        no_token: 沒有綁定第三方應用
+        unbind: 解除綁定
+        unbind-confirm: 您確認要解除綁定嗎？
+        oauth_app_name: 應用名稱
+        oauth_app_expire: 授權自動過期時間
+        oauth_app_scope: 授權範圍
+      unbind:
+        success: 綁定已成功解除。
+        failed: 解除綁定失敗。
+      new:
+        label_hint: 標籤可以幫助記憶密鑰的用途，可選
+      create:
+        alert_two_factor: 兩步驗證失敗。
+        success: 密鑰創建成功。
+        failed: 很抱歉，密鑰創建失敗, 請再幾分鐘後重試或聯繫管理員。
+        desc: 請將以下Access Key和Secret Key複製粘貼到安全的地方保存。該頁面關閉之後Secret Key不會再顯示。
+      edit:
+        access_key_hint: 創建時間 %{created_at}
+        label_hint: 標籤可以幫助記憶密鑰的用途，可選
+        ip_whitelist_hint: IP地址以逗號分隔，留空表示任何IP都可使用該密鑰
+      update:
+        alert_two_factor: 兩步驗證失敗。
+        success: 保存成功。
+        failed: 保存失敗, 請再幾分鐘後重試或聯繫管理員。
+      destroy:
+        success: 密鑰已刪除。
+        failed: 密鑰刪除失敗。
+    assets:
+      index:
+        liability-proof: 資產證明
+        btc-assets: BTC資產清單
+        cny-assets: CNY資產清單
+      liability_tabs:
+        verify-btc: 驗證我的BTC資產
+        verify-cny: 驗證我的CNY資產
+        btc-assets-total: '交易所BTC總資產：'
+        cny-assets-total: '交易所CNY總資產：'
+      liability_proof:
+        title: 資產證明
+        intro: 我們將銀行賬戶，比特幣錢包地址，以及用戶存款總額公開以便用戶時刻瞭解我們的資產狀況；我們提供的數字證明能證明我們提供的存款總額數據是真實的。我們通過技術手段來保證您的資金處於隨時能夠提取的狀態。
+        how-to-verify: 如何驗證交易所具備償付能力？
+        how-to-verify-uri: https://peatio.com/documents/liability_proof
+      liability_data:
+        liability-proof-generating: 用戶資產證明正在生成中，請30分鐘後再來。
+        root-json: 交易所總資產驗證代碼
+        partial-tree: '我的%{currency}資產：'
+        get-partial-tree: 獲取我的資產驗證代碼
+        timestamp: 當前操作僅針對您在%{time}的資產驗證。
+        go-verify: 去驗證
+      btc_assets:
+        title: BTC資產清單
+        intro: 查看交易所全部BTC資產清單
+        total: BTC總資產
+        address: 錢包地址
+      cny_assets:
+        title: CNY資產清單
+        intro: 查看交易所全部CNY資產清單
+        total: CNY總資產
+        description: " <p>每位登錄比特幣台灣的用戶可通過查詢比特幣台灣唯一開戶銀行餘額監督我們的服務。</p> <p>開戶銀行： %{bank}</p> <p>開戶帳號： %{address}</p> <p>查詢密碼： %{password}</p> <p>查詢電話： %{tel}</p>"
+      partial_tree:
+        success: '獲取成功！驗證數據生成時間為：%{timestamp}'
+    funds:
+      show:
+        account_history: 賬戶歷史記錄
+        cny_format: '0.00'
+        btc_format: '0.00000000'
+        reason:
+          ntd:
+            strike_add: 成交賣出
+            strike_sub: 成交買入
+            deposit: 充值
+            withdraw: 提現
+            fix: 系統修正
+          cny:
+            strike_add: 成交賣出
+            strike_sub: 成交買入
+            deposit: 充值
+            withdraw: 提現
+            fix: 系統修正
+          btc:
+            strike_add: 成交買入
+            strike_sub: 成交賣出
+            deposit: 充值
+            withdraw: 提現
+            fix: 系統修正
+        ref:
+          system: 系統
+          default: 默認
+    id_documents:
+      edit:
+        state: 驗證狀態
+        state_unverified: 未驗證
+        state_verifying: 驗證中
+        state_verified: 已驗證
+        name: 真實姓名
+        birth_date: 生日
+        address: 地址
+        city: 城市
+        country: 國家
+        zipcode: 郵編
+        id_document_type: 證件類型
+        id_document_number: 證件號碼
+        id_document_file: 證件照片
+        id_bill_type: 賬單類型
+        id_bill_file: 賬單照片
+      update:
+        notice: 實名認證信息已成功提交。
+    markets:
+      show:
+        error: 委託失敗
+        success: 委託成功
+        analysis_panel: 分析面板
+        help_panel: 幫助面板
+        done: 成交
+        cancel: 撤單
+        cancel_confirm: 確認撤銷此單嗎？
+        confirm: 確認
+        ask_order: '賣 ##sn#'
+        bid_order: '買 ##sn#'
+        my_active_order: <v>有</v><v>效</v><v>委</v><v>單</v>
+        my_done_order: <v>成</v><v>交</v><v>委</v><v>單</v>
+        trades: <v>委</v><v>單</v><v>成</v><v>交</v>
+        chat: 聊天頻道
+      market_list:
+        all: 全部交易對
+        all_html: "<i class='fa fa-check'></i><span>全部交易對</span>"
+        cny_html: "<i class='fa fa-check'></i><span>CNY交易對</span>"
+        ntd_html: "<i class='fa fa-check'></i><span>NTD交易對</span>"
+        btc_html: "<i class='fa fa-check'></i><span>BTC交易對</span>"
+        price: 最新價
+        change: "24h漲跌"
+      range_switch:
+        switch_1: 1m
+        switch_5: 5m
+        switch_15: 15m
+        switch_30: 30m
+        switch_60: 1h
+        switch_120: 2h
+        switch_240: 4h
+        switch_360: 6h
+        switch_720: 12h
+        switch_1440: 1d
+        switch_4320: 3d
+        switch_10080: 1w
+      depths:
+        price: 價格
+        amount: 數量
+        buy: 買入
+        sell: 賣出
+        ask_orders: 賣出
+        bid_orders: 買入
+      ticker:
+        last: 最新成交價
+        ask: 賣一價
+        bid: 買一價
+      account_balance:
+        title: 賬戶餘額
+        available: 可用 %{currency}
+      bid_entry:
+        action: "買入%{currency}"
+        price: 價格
+        last_price: 最新價格
+        amount: 數量
+        total: 金額
+      ask_entry:
+        action: "賣出%{currency}"
+        price: 價格
+        last_price: 最新價格
+        amount: 數量
+        total: 金額
+      place_order:
+        price_high: 高
+        price_low: 低
+        full_bid: 滿
+        full_ask: 空
+      order_book:
+        title: 市場實時委單記錄
+        volume: 數量
+        price: 價格
+        amount: 總價
+        ask: 賣出
+        bid: 買入
+        fade_toggle_depth: 市場深度
+      trade_state:
+        new: 未成交
+        partial: 部分成交
+      market_trades:
+        all: 所有成交
+        my: 我的成交
+        all_html: "<i class='fa fa-check'></i><span>所有成交</span>"
+        my_html: "<i class='fa fa-check'></i><span>我的成交</span>"
+        time: 成交時間
+        price: 成交價
+        volume: 成交量
+      header:
+        network: 連接狀態
+        vol: 24小時 成交量
+        high: 最高
+        low: 最低
+        change: 漲跌
+      settings:
+        sound: 音效
+        notification: 通知
+        funds: "資金管理"
+        signout: "安全退出"
+        settings: "賬戶設置"
+        history: "歷史記錄"
+      account_summary:
+        title: 總資產約
+        account: 賬號
+        amount: 總計
+        locked: 凍結
+        view_all_accounts: "查看全部賬戶"
+        hide_all_accounts: "隱藏其他賬戶"
+      my_orders:
+        orders_wait: 掛單紀錄
+        orders_done: 已完成訂單
+        orders_cancel: 最新撤銷
+        no_open_orders: 當前沒有未完成委託
+        clear_all_html: "<i class='fa fa-trash'></i><span>撤銷所有</span>"
+        clear_bids_html: "<i class='fa fa-trash'></i><span>撤銷買入</span>"
+        clear_asks_html: "<i class='fa fa-trash'></i><span>撤銷賣出</span>"
+        confirm_clear_all: 確定要撤銷全部 [買賣委單] 嗎?
+        confirm_clear_bids: 確定要撤銷 [買入委單] 嗎?
+        confirm_clear_asks: 確定要撤銷 [賣出委單] 嗎?
+        price: 委單價
+        volume: 委單量
+        amount: 總價
+        time: 創建時間
+      mask:
+        warning: 請 <a class=text-up href='/'>登錄</a> 或 <a class=text-up href='/'>註冊</a> 後進行操作
+      klime_chart:
+        title: K線圖
+      global:
+        global_orders_title: 十檔盤口
+        global_trades_title: 成交記錄
+      chat:
+        title: 聊天頻道
+    settings:
+      success: 設置成功！
+      failure: 無效動態密碼，設置失敗。請重試。
+      index:
+        safety_instruction: 您應啟用全部 <b>安全設置</b><i class='fa fa-bolt'></i>，以保障帳戶及資金安全。
+        reset_password: 重置登錄密碼
+        reauthenticate: 身份驗證
+        activated: 郵件已經發送至您的郵箱，請您盡快進入您的郵箱進行驗證，如未收到請點擊再次發送。
+        auth-activated: 請您驗證郵箱地址，否則將無法進行任何操作。
+        auth-verified: 請您提交實名認證，否則將無法進行任何操作。
+        email:
+          title: 郵箱驗證
+          description: 您的郵箱還未經過驗證，點擊「發送郵件」按鈕，完成驗證。
+          description-activated: 您的郵箱已驗證通過，請牢記並保護好此郵箱地址，這是您作為登錄的唯一賬戶。
+          resend: 再次發送
+          activated: 已綁定
+          go: 設置
+        phone_number:
+          title: 手機綁定
+          description: 綁定手機號碼，讓您的資金更安全，您可以即時收到在網站操作的動態提醒並及時監控賬號安全。
+          go: 設置
+          verified: 已驗證
+          hint: "綁定號碼 %{hint}"
+        two_factor_auth:
+          title: 兩步驗證
+          description: 兩步驗證為您的帳戶額外添加了一層保護。
+          enable: 設置
+          disable: 解除
+        verification:
+          title: 實名認證
+          description: 為配合國家相關法令條例，請您正確輸入信息，進行身份認證，身份認證未完成將不能在網站進行任何操作。
+          go: 設置
+          verified: 已驗證
+        asset_passwords:
+          title: 資金密碼
+          description: 在您提現時，需要資金密碼進行驗證，強烈建議您不要使用和登錄密碼同樣的密碼！
+          go: 設置
+        passwords:
+          title: 登錄密碼
+          description: 此密碼僅限作網站登錄使用，請您牢記。
+          go: 修改
+          set: 設置
+        api_tokens:
+          title: API密鑰
+          description: 申請和管理您的API密鑰
+          go: 設置
+        weibo:
+          title: 綁定微博
+          description: 綁定微博後您可以通過微博進行登錄, 而無需每次都輸入賬號密碼.
+          bound_desc: 此賬號已經與 %{nickname} 綁定
+          bind: 綁定
+          unbind: 解除綁定
+    otps:
+      new:
+        step_1: 第一步
+        step_2: 第二步
+        step_3: 第三步
+        or: 或
+        download_app: 下載並打開Google Authenticator應用到您的智能手機上。
+        scan_qr_code: 用手機掃瞄二維碼
+        enter_passphrase: 將以下密文手動輸入到手機驗證器中
+        enter_passcode: 填入手機顯示的動態密碼以激活兩步驗證
+    shared:
+      balances:
+        locked: 凍結
+        balance: 餘額
+        available: 可用
+        title: "%{icon} %{c} 賬戶"
+        ntd_format: '0.00'
+        cny_format: '0.00'
+        btc_format: '0.00000000'
+        total: 總額合計
+  guides:
+    private:
+      settings:
+        panel: 用戶設置
+        index:
+          intro: 管理並修改您的個人資料及綁定信息。
+      api_tokens:
+        panel: API密鑰
+        index:
+          title: 我的API密鑰
+          intro: 我們為您提供了功能完備，高性能的自動化交易API，通過API您能夠得到當前市場行情，建立買單賣單，查詢自己的委託及成交記錄，查詢賬戶餘額及個人信息。
+        new:
+          title: 創建新密鑰
+        create:
+          title: 創建新密鑰
+        edit:
+          title: 設置API密鑰
+        update:
+          title: 設置API密鑰
+      tickets:
+        panel: 服務單
+      fund_sources:
+        panel: 充值提現賬號管理
+        index:
+          title: 充值提現賬號管理
+          intro: 通過增加充值提現賬號，以便每次充值提現時快速選擇。
+      id_documents:
+        panel: 實名認證
+        new:
+          title: 提交實名認證信息
+          intro: 為配合國家相關法令條例，請您正確輸入信息，進行身份認證，身份認證未完成將不能在網站進行任何操作。
+    panels:
+      balance: 用戶賬戶信息
+    verify:
+      google_auths:
+        panel: 兩步驗證
+        edit:
+          title: 解除兩步驗證
+          intro: 若您換了新手機，您可以先解除舊手機的兩步驗證，接觸後再用新手機進行兩步驗證的設置。
+      sms_auths:
+        panel: 綁定手機號碼
+    reset_passwords:
+      panel: 登錄密碼
+      new:
+        title: 重置登錄密碼
+        intro: 請您輸入您創建賬戶時的郵箱地址，輸入驗證碼提交後，進入郵箱，根據提示重置密碼。
+      create:
+        title: 重置登錄密碼
+        intro: 請您輸入您創建賬戶時的郵箱地址，輸入驗證碼提交後，進入郵箱，根據提示重置密碼。
+      edit:
+        title: 設置登錄密碼
+      update:
+        title: 設置登錄密碼
+    sessions:
+      panel: 登錄
+      new:
+        title: 登錄我的賬戶
+        intro: 現在登錄，以便您開始交易，隨時關注交易動態。
+      failure:
+        title: 登錄我的賬戶
+        intro: 現在登錄，以便您開始交易，隨時關注交易動態。
+    identities:
+      panel: 創建賬戶
+      new:
+        title: 創建我的賬戶
+        intro: 這將是您的各項服務所需要的用戶名，例如交易購買、轉賬、提幣、提現等，為了您的賬戶安全，盡量避免不安全的因素，請您填寫完整。
+      edit:
+        panel: 我的賬戶
+        title: 修改密碼
+    two_factors:
+      panel: 兩步驗證
+  simple_form:
+    placeholders:
+      deposit:
+        bank:
+          amount: 最低金額100元
+      session:
+        email: 郵箱地址
+        password: 密碼
+      identity:
+        email: 例如：xiaobai@example.com
+        password: 請設置登錄密碼
+        password_confirmation: 確認密碼
+        edit:
+          password: 請設置新密碼
+      document:
+        key: 文章連接URL鍵值
+        title: 文章標題
+      fund_source:
+        label: 真實姓名
+        address: 地址
+      order_bid:
+        origin_volume: 買入數量
+        sum: 總成交金額
+      order_ask:
+        origin_volume: 賣出數量
+        sum: 總成交金額
+      reset_password:
+        email: 例如：xiaobai@example.com
+        password: 請設置登錄密碼
+      withdraw:
+        bank:
+          sum: 最低金額100元，單筆限額5萬元
+        satoshi:
+          sum: 最低 0.001
+          fund_extra: 填寫常用標籤（可選）
+    hints:
+      deposit:
+        bank:
+          sum: "<a target='_balance' href='#'>資費說明</a>"
+          member_name: "<span class='text-danger'>充值銀行賬戶姓名必須與您的實名認證姓名一致</span>"
+          sn: "<span class='text-danger'>請您務必在銀行轉賬操作備註中填寫數字: <b>%{sn}</b>，否則我們無法快速處理您的訂單。</span>"
+      two_factor:
+        otp_secret: 建議您備份好二維碼圖片或者密文，以免手機意外丟失後給您帶來不便。
+        otp: 您的驗證器每三十秒會重新生成新密碼，請及時輸入。
+      identity:
+        password: 請輸入至少6位密碼, 建議包含大寫、小寫字母與數字。
+      reset_password:
+        password: 請輸入至少6位密碼, 建議包含大寫、小寫字母與數字。
+      id_document:
+        name: 請填寫與您證件上一致的姓名。
+      withdraw:
+        bank:
+          member_name: "<span class='text-danger'>提現銀行賬戶姓名必須與您的實名認證姓名一致</span>"
+          sum: "<a target='_balance' href='#'>資費說明</a>"
+          fund_extra: 若您的開戶銀行不再列表中，請聯繫客服
+        satoshi:
+          sum: "<a target='_balance' href='#'>資費說明</a>"
+    creating: Creating...
+    updating: Updating...
+    buttons:
+      or: or
+      cancel: 取消
+    'yes': '是'
+    'no': '否'
+    required:
+      text: 必須的
+      mark: "*"
+    error_notification:
+      default_message: '請檢查以下問題:'
+    labels:
+      defaults:
+        title: 標題
+      google_auth:
+        uri: 二維碼
+        otp_secret: 密文
+        otp: 驗證器上的密碼
+      fund_source:
+        label: 開戶行 / 標籤
+        address: 銀行卡號 / 地址
+        category: 選擇提現種類
+      session:
+        email: 登錄郵箱
+        password: 登錄密碼
+        captcha: 驗證碼
+      identity:
+        email: 登錄郵箱
+        old_password: 舊密碼
+        password: 新密碼
+        password_confirmation: 確認密碼
+      reset_password:
+        password: 新密碼
+      ticket:
+        content: 詳細描述
+      withdraw:
+        bank:
+          fund_extra: 開戶行
+          sum: 提取金額
+          account_balance: 可用金額
+          member_name: 賬戶名
+        satoshi:
+          fee: 手續費
+          sum: 提取金額
+          fund_uid: 提現地址
+          fund_extra: 提現標籤
+          account_balance: 可用金額
+          member_name: 賬戶名
+  admin:
+    deposits:
+      banks:
+        index:
+          oneday: 二十四小時內充值訂單
+          available: 全部未完成充值訂單
+        show:
+          alert: 未發現外部充值賬單，無法處理充值。
+          notice: 此賬目已經充值成功，請手工記錄。
+          deposit: 充值請求
+          accept: 充值
+          target_deposit: 外部充值
+          confirm: 確認給用戶進行充值嗎？
+        update:
+          blank_txid: Txid 不能為空
+      satoshis:
+        update:
+          notice: 此筆充值已經成功到賬。
+        index:
+          accept: 立即充值
+          accept_confirm: 確定立刻確認此充值？
+    tickets:
+      view: 查看
+      close: 關閉服務單
+      comments_count: 回複數量
+      replies: 回復
+      open_tickets: 未結束服務單
+      closed_tickets: 已結束服務單
+    members:
+      index:
+        search: 搜索
+        members: 用戶列表
+        email: 郵箱地址
+        name: 姓名
+        phone: 手機號碼
+        wallet_address: 錢包地址
+      show:
+        member_title: 用戶信息
+        actions_title: 操作
+        accounts_title: 賬戶信息
+        account_versions_title: 賬戶記錄
+    dashboard:
+      index:
+        accounts_title: 賬戶匯總
+        daemons_title: 系統匯總
+    documents:
+      index:
+        new: 新建文檔
+    statistic:
+      filter: 篩選
+      summary: 總結
+      click-to-expand: 點擊展開
+      members:
+        show:
+          table: 用戶數據結果
+      orders:
+        show:
+          avg: 掛單均價
+          sum: 掛單量
+          sum_strike: 被成交量
+          count: 掛單數
+      trades:
+        show:
+          count: 成交數
+          volume: 總量成交
+          amount: 總價成交
+          min_price: 最低成交價
+          max_price: 最高成交價
+          avg_price: 平均成交價
+          amount_fee: 總價手續費
+          volume_fee: 總量手續費
+      deposits:
+        show:
+          count: 總數
+          amount: 金額合計
+      withdraws:
+        show:
+          count: 總數
+          amount: 金額合計
+          fee: 手續費
+    withdraws:
+      banks:
+        index:
+          one: 待處理提現訂單
+          all: 二十四小時內訂單
+          empty: 無任何數據
+        show:
+          process: 受理
+          succeed: 提現
+          reject: 駁回
+          succeed_confirm: 確定處理提現？
+          reject_confirm: 確定駁回提現？
+          withdraw: 銀行卡提現
+          empty: 無任何數據
+      satoshis:
+        index:
+          one: 待處理提現訂單
+          all: 二十四小時內訂單
+          empty: 無任何數據
+        show:
+          process: 受理
+          succeed: 提現
+          reject: 駁回
+          succeed_confirm: 確定處理提現？
+          reject_confirm: 確定駁回提現？
+          withdraw: 比特幣提現
+  deposits/satoshi:
+    aasm_state:
+      submitted: 受理中
+      accepted: 充值成功
+      checked: 充值成功
+      warning: 異常
+  doorkeeper:
+    scopes:
+      profile: 讀取您的基本賬戶信息(如姓名, 郵件地址)和賬戶餘額
+      history: 讀取您的掛單和成交記錄
+      trade: 代表您在Peatio上進行交易
+    authorizations:
+      new:
+        title: Peatio 第三方應用授權
+        authorize_html: 確定要授權 <strong class='text-info'>%{name}</strong> 使用您的賬戶嗎？
+        scopes: '該應用將獲得如下權限：'
+        authorize: 同意
+        deny: 拒絕
+    errors:
+      messages:
+        invalid_request: The request is missing a required parameter, includes an unsupported parameter value, or is otherwise malformed.
+        invalid_redirect_uri: The redirect uri included is not valid.
+        unauthorized_client: The client is not authorized to perform this request using this method.
+        access_denied: The resource owner or authorization server denied the request.
+        invalid_scope: The requested scope is invalid, unknown, or malformed.
+        server_error: The authorization server encountered an unexpected condition which prevented it from fulfilling the request.
+        temporarily_unavailable: The authorization server is currently unable to handle the request due to a temporary overloading or maintenance of the server.
+        credential_flow_not_configured: Resource Owner Password Credentials flow failed due to Doorkeeper.configure.resource_owner_from_credentials being unconfigured.
+        resource_owner_authenticator_not_configured: Resource Owner find failed due to Doorkeeper.configure.resource_owner_authenticator being unconfiged.
+        unsupported_response_type: The authorization server does not support this response type.
+        invalid_client: Client authentication failed due to unknown client, no client authentication included, or unsupported authentication method.
+        invalid_grant: The provided authorization grant is invalid, expired, revoked, does not match the redirection URI used in the authorization request, or was issued to another client.
+        unsupported_grant_type: The authorization grant type is not supported by the authorization server.
+        invalid_resource_owner: The provided resource owner credentials are not valid, or resource owner cannot be found
+        invalid_token:
+          revoked: The access token was revoked
+          expired: The access token expired
+          unknown: The access token is invalid
+    flash:
+      applications:
+        create:
+          notice: Application created.
+        destroy:
+          notice: Application deleted.
+        update:
+          notice: Application updated.
+      authorized_applications:
+        destroy:
+          notice: Application revoked.
+  easy_table:
+    satoshi:
+      amount: 金額
+      txid: TxID
+      created_at: 創建時間
+      confirmations: 確認數
+      member_name: 用戶
+      state_and_actions: 狀態/操作
+      currency_obj_key_text: 幣種
+    bank:
+      sn: SN
+      amount: 金額
+      created_at: 創建時間
+      fund_source: 賬號
+      memo: Memo
+      member_name: 用戶
+      state_and_actions: 狀態/操作
+      currency_obj_key_text: 幣種
+  enumerize:
+    account_version:
+      reason:
+        fix: 系統修正
+        unknown: 未知
+        strike_add: 成交增加
+        strike_sub: 成交扣除
+        strike_fee: 手續費
+        strike_unlock: 成交解除凍結
+        order_cancel: 撤單
+        order_submit: 掛單
+        deposit: 充值
+        withdraw: 提現
+        withdraw_lock: 提現凍結
+        withdraw_unlock: 提現駁回
+    state:
+      done: 完成
+      wait: 等待
+      cancel: 取消
+    currency:
+      ntd: TWD
+      cny: CNY
+      btc: BTC
+    order:
+      state:
+        done: 完全成交
+        wait: 等待成交
+        cancel: 撤銷
+    deposit:
+      aasm_state:
+        submitted: 受理中
+        submitting: 待提交
+        accepted: 已到賬
+        cancelled: 已撤銷
+        rejected: 已駁回
+        checked: 已到賬
+        warning: 異常
+    withdraw:
+      state:
+        submitting: 受理中
+        submitted: 已受理
+        rejected: 已駁回
+        accepted: 已受理
+        suspect: 異常
+        processing: 受理中
+        done: 完成
+        canceled: 已撤銷
+    fund_source:
+      category:
+        satoshi: 比特幣 - 網絡轉賬
+        bank: 人民幣 - 銀行轉賬
+    id_document:
+      id_document_type:
+        id_card: 身份證
+        passport: 護照
+        driver_license: 駕照
+      id_bill_type:
+        bank_statement: 銀行賬單
+        tax_bill: 稅單
+  views:
+    pagination:
+      first: "<<"
+      last: '>>'
+      previous: "上一頁"
+      next: 下一頁
+      truncate: "..."
+  mailer:
+    dear_user: 您好,
+    signature: 比特幣台灣團隊
+    please_contact: 如果此次登錄不是您本人操作，請馬上<a href="mailto:%{contact_mail}">聯繫我們</a>。
+    footer: 此郵件由系統自動發出，請勿直接回復。 有問題請<a href="mailto:%{contact_mail}">聯繫我們</a>。
+  comment_mailer:
+    admin_notification:
+      subject: "[BTCTW] 用戶回復了服務單"
+      notification_content: 用戶 %{email} 回復了服務單，詳情請查看鏈接：
+    user_notification:
+      subject: "[BTCTW] 您的服務單有了新的回復"
+      notification_content: '您的服務單有一條新的回復, 請在下方鏈接查看詳情：'
+  deposit_mailer:
+    accepted:
+      subject: "[比特幣台灣] 您的充值已經到賬"
+      content: 您的 %{currency} 已經到賬.
+  member_mailer:
+    notify_signin:
+      subject: "[BTCTW] 您剛剛成功登錄"
+      just_signed_in: 您剛剛成功登錄了。
+    google_auth_activated:
+      subject: "[BTCTW] 綁定谷歌兩步驗證"
+      google_auth_activated: 您已綁定谷歌兩步驗證。
+    google_auth_deactivated:
+      subject: "[BTCTW] 重置谷歌兩步驗證"
+      google_auth_deactivated: 您已重置谷歌兩步驗證。
+    sms_auth_activated:
+      subject: "[BTCTW] 綁定短信兩步驗證"
+      sms_auth_activated: 您已綁定短信兩步驗證。
+    sms_auth_deactivated:
+      subject: "[BTCTW] 重置短信兩步驗證"
+      sms_auth_deactivated: 您已重置短信兩步驗證。
+    reset_password_done:
+      subject: "[BTCTW] 密碼修改成功"
+      successful: 您已成功修改密碼。請妥善保管~
+    phone_number_verified:
+      subject: "[BTCTW] 您已成功綁定手機"
+      verified: '您已成功綁定手機，號碼為：%{phone_number}。'
+  system_mailer:
+    daily_stats:
+      member_stats: 新增用戶
+      signup: 註冊
+      activation: 激活
+      asset_stats: 資金變動
+      trade_stats: 交易變動
+      asset_value_change_total: 數字貨幣變動總計
+      trades_change_total: 交易數變動總計
+  ticket_mailer:
+    admin_notification:
+      subject: "[BTCTW] 用戶新建了服務單"
+      admin_notification_content: 用戶 %{email} 新建了服務單，詳情請查看鏈接：
+    author_notification:
+      subject: "[BTCTW] 您的服務單提交成功"
+      thanks_for_submit_ticket: 感謝您的反饋。我們會盡快處理，並第一時間告知您相關進展。
+  token_mailer:
+    activation:
+      subject: "[Peatio] 帳號激活"
+      click_to_verify: '感謝您註冊 Peatio，趕快點擊下面的鏈接驗證您的E-mail吧：'
+      unable_to_click: 如果鏈接無法點擊，請完整拷貝到瀏覽器地址欄裡直接訪問。
+      link_expire: 鏈接30分鐘之內有效。
+    reset_password:
+      subject: "[Peatio] 請重置您的密碼"
+      hi: 您好
+      follow_the_link: '請使用下面的連接，在30分鐘之內嘗試重置您的登錄密碼：'
+  withdraw_mailer:
+    submitted:
+      subject: "[比特幣台灣] 您的提現狀態更新"
+      content: 您的%{currency}提現請求已經被成功提交，我們會盡快處理您的提現請求。謝謝您的耐心等待，如果您有任何問題，請及時與我們聯繫。
+    processing:
+      subject: "[比特幣台灣] 您的提現狀態更新"
+      content: 您的%{currency}提現請求正在處理中，謝謝您的耐心等待，如果您有任何問題，請及時與我們聯繫。
+    done:
+      subject: "[比特幣台灣] 您的提現狀態更新"
+      content: 您的%{currency}提現請求已經處理完畢，請查詢您的賬戶。如果您有任何問題，請及時與我們聯繫。
+    withdraw_state:
+      subject: "[比特幣台灣] 您的提現狀態更新"
+      your_state: '您的提現狀態：'
+  view_on_github: 到 Github 上查看
+  slogan: 比特幣台灣，將致力於成為世界級的交易軟件。
+  tags:
+    vip: VIP
+    hero: 超級用戶
+    admin: 管理員
+  trade:
+    markets: 市場
+    realtime_price:
+      title: 實時價格
+    account_balance:
+      title: 賬戶餘額
+  gon:
+    ask: 賣出
+    bid: 買入
+    brand: Peatio交易所
+    notification:
+      title: Peatio交易所
+      enabled: 實時更新已開啟。
+      new_trade: "您的%{kind}委託 #%{id} 以 %{price} %{quote_unit} 價格成交，%{kind} %{volume} %{base_unit}。"
+  back: 返回
+  invalid_password: 無效的登錄密碼
+  all: 全部
+  date:
+    formats:
+      date-short: "%m-%d"
+      short: "%m-%d %H:%M"
+      default: "%Y-%m-%d %H:%M"
+  time:
+    formats:
+      date-short: "%m-%d"
+      short: "%m-%d %H:%M"
+      default: "%Y-%m-%d %H:%M"
+  sms:
+    verification_code: '驗證碼為：%{code}，30分鐘內有效。（提示：工作人員不會索要，切勿洩露！）【BTCTW】'
+    password_changed: '%{email} 您好，您已成功修改賬戶密碼，若非本人操作，您的賬戶可能存在被盜風險，請立即聯繫客服！【BTCTW】'
+    deposit_done: '%{email} 您好，您於%{time}進行了（%{currency}）充值操作，金額為%{amount}。最新餘額為：%{balance}。（若非本人操作，請及時聯繫我們！）【BTCTW】'
+    withdraw_done: '%{email} 您好，您於%{time}進行了（%{currency}）提現操作，金額為%{amount}。最新餘額為：%{balance}。（若非本人操作，請立即聯繫客服！）【BTCTW】'
+  header:
+    home: 首頁
+    dashboard: 控制面板
+    admin: 後台管理
+    market: 交易大廳
+    settings: 賬戶
+    signin: 登錄
+    signout: 安全退出
+    signup: 創建賬戶
+    login_via_weibo: 微博登陸
+    funds: 我的資產
+    getstart: 前往交易大廳
+    assets: 資產公開
+    history: 歷史記錄
+    order_history: 委託記錄
+    trade_history: 成交記錄
+    account_history: 賬戶記錄
+    my_profile: 用戶設置
+    tickets: 服務單
+    account_balance: 賬戶資產
+    back: 返回
+    total: 總額
+    deposit: 充值
+    withdraw: 提現
+  admin_header:
+    deposits: 充值管理
+    withdraws: 提現管理
+    statistics: 數據統計
+    id_documents: 身份驗證
+  footer:
+    about: 關於我們
+    privacy: 隱私條款
+    contact: 聯繫我們
+    price: 資費說明
+    liability_proof: 償付能力驗證
+  actions:
+    go: 立刻前往
+    submit: 提交
+    deposit: 立刻充值
+    select: 請選擇
+    unlock: 解鎖
+    confirm: 確認
+    back: 返回
+    block: 區塊中查看地址
+    destroy: 刪除
+    destroy_confirm: 您確定要刪除此記錄嗎？
+    detail: 詳情
+    publish: 發佈
+    edit: 編輯
+    preview: 預覽
+    close: 退出
+    cancel: 撤銷
+    view: 查看
+    member: 查看用戶
+    transact: 處理
+    reject: 駁回
+    clipboard:
+      click: 點擊複製
+      done: 複製成功
+  chart:
+    open: 開盤價
+    high: 最高價
+    low: 最低價
+    close: 收盤價
+    price: 價格
+    volume: 成交量
+    candlestick: 'K線圖'
+    line: '分時圖'
+    minute: 分
+    hour: 小時
+    day: 日
+    week: 周
+    month: 月
+    year: 年
+    zoom: 縮放
+    ask: 買單
+    bid: 賣單
+    depth: 累計深度
+    depth_title: 市場深度
+  'yes': '是'
+  'no': '否'
+  simple_captcha:
+    label: 不區分大小寫，如果看不清請刷新頁面
+    placeholder: 請輸入圖片中的字符
+  helpers:
+    action:
+      view: 查看
+      customer_service: 聯繫客服
+    submit:
+      order_ask:
+        create: 賣出
+      order_bid:
+        create: 買入
+      document:
+        create: 創建文檔
+        update: 更新文檔
+        destroy: 刪除文檔
+      member:
+        update: 開通賬戶
+      identity:
+        save: 登錄
+        create: 註冊
+        destroy: 登出
+        verify: 驗證
+        update: 修改
+      two_factor:
+        create: 驗證
+        update: 激活
+      reset_two_factor:
+        create: 重置兩步驗證
+      reset_password:
+        update: 重置登錄密碼
+        create: 發送重置請求
+      fund_source:
+        create: 保存
+      deposit:
+        create: 充值
+      id_document:
+        create: 提交
+      withdraw:
+        create: 提交
+      ticket:
+        create: 提交
+  activations:
+    new:
+      notice: 郵件已經發送至您的郵箱，請您盡快進入您的郵箱進行驗證，如未收到請點擊再次發送。
+      verified: 您的郵箱已驗證通過。
+      login_required: 本操作需要登錄，請先登錄
+      tip: 激活連接已經發送到 <span class='text-primary'>%{email}</span>
+      spam: 該郵件有可能出現在垃圾郵件中，請注意查看。
+    edit:
+      notice: 郵箱驗證已經通過，請您完成其他安全設置。
+      alert: 驗證鏈接已過期或無效。
+  authentications:
+    emails:
+      new:
+        title: 設置郵箱
+        setup_email: 請設置您的郵箱, 否則將無法進行任何操作。
+        warning: 設置郵件後, 請查收您的收件箱並進行激活
+        email_address: 郵箱地址
+        save: 保存
+    weibo:
+      destroy:
+        last_auth_alert: 親, 微博是您最後一種登錄方式了, 解除了就沒法登錄了
+        unbind_success: 已經解除微博綁定
+    identities:
+      new:
+        title: 設置密碼
+        save: 設置
+      create:
+        success: 密碼設置成功
+  forum:
+    index:
+      notice:
+        display_name: 使用論壇前請設置一個暱稱
+  identities:
+    new:
+      title: 賬戶註冊
+      signin: 立即登錄
+      password: 請輸入至少6位密碼, 建議包含大寫、小寫字母與數字。
+    update:
+      auth-error: 您輸入的舊密碼錯誤，請重新輸入。
+      auth-same: 您輸入的新密碼與舊密碼相同，請重新輸入。
+      notice: 登錄密碼修改成功, 請重新登錄。
+  layouts:
+    admin:
+      menus:
+        sections:
+          members: 用戶管理
+          deposits: 充值通道
+          sites_statistics: 數據統計
+          operating: 運營管理
+        items:
+          operating:
+            proofs: 資產證明
+            deposits: 充值管理
+            documents: 文檔管理
+            withdraws: 提現管理
+            tickets: 服務單管理
+          deposits:
+            currency: 法幣充值
+    application:
+      close: 關閉
+    meta:
+      page_title: BTCTW - Bitcoin Taiwan
+      page_description: BTCTW - Bitcoin Taiwan
+      page_keywords: BTCTW, Bitcoin Taiwan
+  members:
+    edit:
+      name: 為了保障資金安全，請填寫您的真實姓名等信息。
+  reset_passwords:
+    create:
+      success: 重置密碼郵件已經發送至您的郵箱，請根據郵件內容進行操作。如未收到郵件，請到「垃圾郵箱」裡找一下哦~ 或重新發送請求。
+    edit:
+      password: 請輸入至少6位密碼, 建議包含大寫、小寫字母與數字。
+      invalid: 無效的請求
+      submit: 重置登錄密碼
+      alert: 無效的重置鏈接。
+    update:
+      success: 登錄密碼已經重置，請妥善保管您的新密碼。
+      invalid: 無效的請求
+  sessions:
+    new:
+      reset_password: 忘記密碼
+    new_with_two_factor_auth:
+      title: 兩步驗證
+      reset_two_factor: 遺失兩步驗證
+    create_with_two_factor_auth:
+      session_expired: 操作超時，請重試。
+    create:
+      error: 您輸入的密碼和郵箱地址不正確，請重新輸入。
+    failure:
+      account_locked: 密碼錯誤次數過多，為保證您的帳戶安全該帳戶已被鎖定。重置密碼請點擊「忘記密碼」。
+      error: 您輸入的密碼和郵箱地址不正確，請重新輸入。
+  shared:
+    admin:
+      member:
+        member_info: 用戶信息
+        deactive_sms_two_factor: 短信兩步驗證
+        deactive_app_two_factor: 谷歌兩步驗證
+        inactive: 未激活
+        deactive: 取消
+        are_you_sure: 確認取消二次驗證？
+      account:
+        account_info: 賬戶信息
+        payment_address: 充值地址
+    alert:
+      modern: 為了不影響交易體驗，請使用更流行的瀏覽器進行交易，我們向您推薦 <a target='_blank' href='http://www.baidu.com/s?wd=Google+Chrome'>Google Chrome 瀏覽器</a>。
+      pusher_unavailable: 與服務器通訊異常，<a href='#' class='alert-link'>請刷新頁面重試</a>。
+    header:
+      balance: 餘額
+    header_account_balance:
+      locked: 凍結
+    market:
+      ticker:
+        ask_price: 賣一
+        bid_price: 買一
+        high_price: 最高
+        low_price: 最低
+        volume: 成交量
+        latest_price: 最新價格
+    frame:
+      deposit_now: 馬上去充值
+  two_factors:
+    index:
+      verify: 驗證
+    update:
+      alert: 您輸入的驗證碼錯誤，請重新輸入!
+    auth:
+      please_active_two_factor: 為了您的資金安全, 請先綁定手機或設置兩步驗證。
+      submit: 確認
+      otp_placeholder: 6位數字密碼
+      google_app: 谷歌身份驗證器
+      sms: 手機短信驗證
+      send_code: 獲取驗證碼
+      send_code_alt: COUNT秒後重新發送
+      hints:
+        app: 谷歌驗證器每三十秒會重新生成新密碼，請及時輸入。
+        sms: 請點擊「獲取驗證碼」按紐，我們將會把驗證碼以短信的方式發到您的手機上。
+  verify:
+    google_auths:
+      edit:
+        submit: 確認解除
+        warning: '註：若您在使用過程中因安裝程序丟失，導致無法繼續使用兩步認證，請您及時聯繫我們的在線客服。'
+      show:
+        step-1: 第一步
+        step-2: 第二步
+        step-3: 第三步
+        or: 或
+        download-app: 根據您使用的手機系統類型，點擊左側快捷入口，下載並打開 Google Authenticator 應用到您的智能手機上。
+        guide-link: "具體操作方式可<a href='https://support.google.com/accounts/answer/1066447?hl=zh-Hans' target='_blank'>點擊這裡</a>。"
+        scan-qr-code: 用 Google Authenticator 應用掃瞄二維碼或將以下密文手動添加到驗證器中。
+        enter-passcode: 填入手機顯示的動態密碼以激活兩步驗證
+        submit: 啟用
+        ios: 蘋果 iOS 系統
+        android: 谷歌安卓系統
+        blackbery: 黑莓系統
+        notice:
+          already_activated: 您已經成功設定了谷歌兩部驗證。
+          not_activated_yet: 您還未設定谷歌兩部驗證。
+      update:
+        alert: 您輸入的驗證器上的密碼有誤，請重新輸入。
+        notice: 兩步驗證已成功綁定。
+        sms_two_factor_error: 您輸入的短信驗證碼有誤，請重新輸入。
+      destroy:
+        alert: 您輸入的驗證器上的密碼有誤，請重新輸入。
+        notice: 兩步驗證已成功解除。
+    sms_auths:
+      show:
+        title: 綁定手機號碼
+        description: 綁定手機號碼，讓您的資金更安全，還可以快速找回密碼，並即時收到您在網站操作的動態提醒和監控賬號安全。
+        warning: 手機未綁定時，您將無法在網站操作提現以及賬戶密碼找回。
+        phone_number: 請輸入手機號碼
+        send_code: 獲取驗證碼
+        send_code_alt: COUNT秒後重新發送
+        input_otp: 請輸入通過短信收到的六位驗證碼
+        submit: 綁定手機號碼
+        notice:
+          send_code_success: 手機短信驗證碼已發送。
+          otp_success: 手機短信驗證碼驗證成功。
+          already_activated: 您的手機號碼已綁定成功。
+        alert:
+          phone_number_error: 手機號碼無效或錯誤
+  withdraw_channel:
+    bank:
+      key: 銀行轉賬提現
+      title: 銀行轉賬提現
+      intro: 銀行轉賬方式提現，推薦大額用戶使用
+      latency: 30 分鐘到賬
+      transfer: 人工處理
+      go: 立即提現
+    satoshi:
+      key: 塊鏈
+      title: 比特幣提現
+      intro: 將您在比特幣台灣的比特幣餘額提取到您的錢包賬戶
+      latency: 30 分鐘到賬
+      transfer: 人工處理
+      go: 立即提現
+  withdraws:
+    invalid_address: 不合法. 無法提現到這個地址
+  withdraws/bank:
+    aasm_state:
+      submitting: 待確認
+      submitted: 待校驗
+      rejected: 已駁回
+      accepted: 已提交
+      suspect: 異常
+      processing: 受理中
+      done: 提現成功
+      almost_done: 發送中
+      canceled: 已撤銷
+      failed: 提現出錯
+  withdraws/satoshi:
+    aasm_state:
+      submitting: 待確認
+      submitted: 待校驗
+      rejected: 已駁回
+      accepted: 已提交
+      suspect: 異常
+      processing: 受理中
+      done: 提現成功
+      almost_done: 發送中
+      canceled: 已撤銷
+      failed: 提現出錯
