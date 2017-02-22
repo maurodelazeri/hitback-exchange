@@ -18,7 +18,7 @@ An open-source crypto currency exchange
 * Industry standard security out of box.
 * Active community behind.
 * Free and open-source.
-* Created and maintained by [Twbtc open-source group](http://peat.io).
+* Maintained by [Mauro Delazeri - maurodelazeri@gmail.com]
 
 
 ### Mobile Apps ###
@@ -43,10 +43,10 @@ An open-source crypto currency exchange
 
 ### API
 
-You can interact with Twbtc through API:
+You can interact with Hitback through API:
 
-* [API v2](http://demo.peat.io/documents/api_v2?lang=en)
-* [Websocket API](http://demo.peat.io/documents/websocket_api)
+* [API v2]
+* [Websocket API]
 
 Here're some API clients and/or wrappers:
 
