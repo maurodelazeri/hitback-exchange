@@ -1065,7 +1065,7 @@ zh-TW:
         email: 郵箱地址
         password: 密碼
       identity:
-        email: 例如：xiaobai@example.com
+        email: 例如：mauro@example.com
         password: 請設置登錄密碼
         password_confirmation: 確認密碼
         edit:
@@ -1083,7 +1083,7 @@ zh-TW:
         origin_volume: 賣出數量
         sum: 總成交金額
       reset_password:
-        email: 例如：xiaobai@example.com
+        email: 例如：mauro@example.com
         password: 請設置登錄密碼
       withdraw:
         bank:
@@ -1408,10 +1408,10 @@ zh-TW:
     footer: 此郵件由系統自動發出，請勿直接回復。 有問題請<a href="mailto:%{contact_mail}">聯繫我們</a>。
   comment_mailer:
     admin_notification:
-      subject: "[BTCTW] 用戶回復了服務單"
+      subject: "[Hitback] 用戶回復了服務單"
       notification_content: 用戶 %{email} 回復了服務單，詳情請查看鏈接：
     user_notification:
-      subject: "[BTCTW] 您的服務單有了新的回復"
+      subject: "[Hitback] 您的服務單有了新的回復"
       notification_content: '您的服務單有一條新的回復, 請在下方鏈接查看詳情：'
   deposit_mailer:
     accepted:
@@ -1419,25 +1419,25 @@ zh-TW:
       content: 您的 %{currency} 已經到賬.
   member_mailer:
     notify_signin:
-      subject: "[BTCTW] 您剛剛成功登錄"
+      subject: "[Hitback] 您剛剛成功登錄"
       just_signed_in: 您剛剛成功登錄了。
     google_auth_activated:
-      subject: "[BTCTW] 綁定谷歌兩步驗證"
+      subject: "[Hitback] 綁定谷歌兩步驗證"
       google_auth_activated: 您已綁定谷歌兩步驗證。
     google_auth_deactivated:
-      subject: "[BTCTW] 重置谷歌兩步驗證"
+      subject: "[Hitback] 重置谷歌兩步驗證"
       google_auth_deactivated: 您已重置谷歌兩步驗證。
     sms_auth_activated:
-      subject: "[BTCTW] 綁定短信兩步驗證"
+      subject: "[Hitback] 綁定短信兩步驗證"
       sms_auth_activated: 您已綁定短信兩步驗證。
     sms_auth_deactivated:
-      subject: "[BTCTW] 重置短信兩步驗證"
+      subject: "[Hitback] 重置短信兩步驗證"
       sms_auth_deactivated: 您已重置短信兩步驗證。
     reset_password_done:
-      subject: "[BTCTW] 密碼修改成功"
+      subject: "[Hitback] 密碼修改成功"
       successful: 您已成功修改密碼。請妥善保管~
     phone_number_verified:
-      subject: "[BTCTW] 您已成功綁定手機"
+      subject: "[Hitback] 您已成功綁定手機"
       verified: '您已成功綁定手機，號碼為：%{phone_number}。'
   system_mailer:
     daily_stats:
@@ -1450,10 +1450,10 @@ zh-TW:
       trades_change_total: 交易數變動總計
   ticket_mailer:
     admin_notification:
-      subject: "[BTCTW] 用戶新建了服務單"
+      subject: "[Hitback] 用戶新建了服務單"
       admin_notification_content: 用戶 %{email} 新建了服務單，詳情請查看鏈接：
     author_notification:
-      subject: "[BTCTW] 您的服務單提交成功"
+      subject: "[Hitback] 您的服務單提交成功"
       thanks_for_submit_ticket: 感謝您的反饋。我們會盡快處理，並第一時間告知您相關進展。
   token_mailer:
     activation:
@@ -1512,10 +1512,10 @@ zh-TW:
       short: "%m-%d %H:%M"
       default: "%Y-%m-%d %H:%M"
   sms:
-    verification_code: '驗證碼為：%{code}，30分鐘內有效。（提示：工作人員不會索要，切勿洩露！）【BTCTW】'
-    password_changed: '%{email} 您好，您已成功修改賬戶密碼，若非本人操作，您的賬戶可能存在被盜風險，請立即聯繫客服！【BTCTW】'
-    deposit_done: '%{email} 您好，您於%{time}進行了（%{currency}）充值操作，金額為%{amount}。最新餘額為：%{balance}。（若非本人操作，請及時聯繫我們！）【BTCTW】'
-    withdraw_done: '%{email} 您好，您於%{time}進行了（%{currency}）提現操作，金額為%{amount}。最新餘額為：%{balance}。（若非本人操作，請立即聯繫客服！）【BTCTW】'
+    verification_code: '驗證碼為：%{code}，30分鐘內有效。（提示：工作人員不會索要，切勿洩露！）【Hitback】'
+    password_changed: '%{email} 您好，您已成功修改賬戶密碼，若非本人操作，您的賬戶可能存在被盜風險，請立即聯繫客服！【Hitback】'
+    deposit_done: '%{email} 您好，您於%{time}進行了（%{currency}）充值操作，金額為%{amount}。最新餘額為：%{balance}。（若非本人操作，請及時聯繫我們！）【Hitback】'
+    withdraw_done: '%{email} 您好，您於%{time}進行了（%{currency}）提現操作，金額為%{amount}。最新餘額為：%{balance}。（若非本人操作，請立即聯繫客服！）【Hitback】'
   header:
     home: 首頁
     dashboard: 控制面板
@@ -1700,9 +1700,9 @@ zh-TW:
     application:
       close: 關閉
     meta:
-      page_title: BTCTW - Bitcoin Taiwan
-      page_description: BTCTW - Bitcoin Taiwan
-      page_keywords: BTCTW, Bitcoin Taiwan
+      page_title: Hitback - Bitcoin Taiwan
+      page_description: Hitback - Bitcoin Taiwan
+      page_keywords: Hitback, Bitcoin Taiwan
   members:
     edit:
       name: 為了保障資金安全，請填寫您的真實姓名等信息。

@@ -1028,7 +1028,7 @@ zh-CN:
         email: 邮箱地址
         password: 密码
       identity:
-        email: 例如：xiaobai@example.com
+        email: 例如：mauro@example.com
         password: 请设置登录密码
         password_confirmation: 确认密码
         edit:
@@ -1046,7 +1046,7 @@ zh-CN:
         origin_volume: 卖出数量
         sum: 总成交金额
       reset_password:
-        email: 例如：xiaobai@example.com
+        email: 例如：mauro@example.com
         password: 请设置登录密码
       withdraw:
         bank:
@@ -1370,10 +1370,10 @@ zh-CN:
     footer: 此邮件由系统自动发出，请勿直接回复。 有问题请<a href="mailto:%{contact_mail}">联系我们</a>。
   comment_mailer:
     admin_notification:
-      subject: "[PEATIO] 用户回复了服务单"
+      subject: "[Hitback] 用户回复了服务单"
       notification_content: 用户 %{email} 回复了服务单，详情请查看链接：
     user_notification:
-      subject: "[PEATIO] 您的服务单有了新的回复"
+      subject: "[Hitback] 您的服务单有了新的回复"
       notification_content: '您的服务单有一条新的回复, 请在下方链接查看详情：'
   deposit_mailer:
     accepted:
@@ -1381,25 +1381,25 @@ zh-CN:
       content: 您的 %{currency} 已经到账.
   member_mailer:
     notify_signin:
-      subject: "[PEATIO] 您刚刚成功登录"
+      subject: "[Hitback] 您刚刚成功登录"
       just_signed_in: 您刚刚成功登录了。
     google_auth_activated:
-      subject: "[PEATIO] 绑定谷歌两步验证"
+      subject: "[Hitback] 绑定谷歌两步验证"
       google_auth_activated: 您已绑定谷歌两步验证。
     google_auth_deactivated:
-      subject: "[PEATIO] 重置谷歌两步验证"
+      subject: "[Hitback] 重置谷歌两步验证"
       google_auth_deactivated: 您已重置谷歌两步验证。
     sms_auth_activated:
-      subject: "[PEATIO] 绑定短信两步验证"
+      subject: "[Hitback] 绑定短信两步验证"
       sms_auth_activated: 您已绑定短信两步验证。
     sms_auth_deactivated:
-      subject: "[PEATIO] 重置短信两步验证"
+      subject: "[Hitback] 重置短信两步验证"
       sms_auth_deactivated: 您已重置短信两步验证。
     reset_password_done:
-      subject: "[PEATIO] 密码修改成功"
+      subject: "[Hitback] 密码修改成功"
       successful: 您已成功修改密码。请妥善保管~
     phone_number_verified:
-      subject: "[PEATIO] 您已成功绑定手机"
+      subject: "[Hitback] 您已成功绑定手机"
       verified: '您已成功绑定手机，号码为：%{phone_number}。'
   system_mailer:
     daily_stats:
@@ -1412,10 +1412,10 @@ zh-CN:
       trades_change_total: 交易数变动总计
   ticket_mailer:
     admin_notification:
-      subject: "[PEATIO] 用户新建了服务单"
+      subject: "[Hitback] 用户新建了服务单"
       admin_notification_content: 用户 %{email} 新建了服务单，详情请查看链接：
     author_notification:
-      subject: "[PEATIO] 您的服务单提交成功"
+      subject: "[Hitback] 您的服务单提交成功"
       thanks_for_submit_ticket: 感谢您的反馈。我们会尽快处理，并第一时间告知您相关进展。
   token_mailer:
     activation:
@@ -1474,10 +1474,10 @@ zh-CN:
       short: "%m-%d %H:%M"
       default: "%Y-%m-%d %H:%M"
   sms:
-    verification_code: '验证码为：%{code}，30分钟内有效。（提示：工作人员不会索要，切勿泄露！）【PEATIO】'
-    password_changed: '%{email} 您好，您已成功修改账户密码，若非本人操作，您的账户可能存在被盗风险，请立即联系客服！【PEATIO】'
-    deposit_done: '%{email} 您好，您于%{time}进行了（%{currency}）充值操作，金额为%{amount}。最新余额为：%{balance}。（若非本人操作，请及时联系我们！）【PEATIO】'
-    withdraw_done: '%{email} 您好，您于%{time}进行了（%{currency}）提现操作，金额为%{amount}。最新余额为：%{balance}。（若非本人操作，请立即联系客服！）【PEATIO】'
+    verification_code: '验证码为：%{code}，30分钟内有效。（提示：工作人员不会索要，切勿泄露！）【Hitback】'
+    password_changed: '%{email} 您好，您已成功修改账户密码，若非本人操作，您的账户可能存在被盗风险，请立即联系客服！【Hitback】'
+    deposit_done: '%{email} 您好，您于%{time}进行了（%{currency}）充值操作，金额为%{amount}。最新余额为：%{balance}。（若非本人操作，请及时联系我们！）【Hitback】'
+    withdraw_done: '%{email} 您好，您于%{time}进行了（%{currency}）提现操作，金额为%{amount}。最新余额为：%{balance}。（若非本人操作，请立即联系客服！）【Hitback】'
   header:
     home: 首页
     dashboard: 控制面板

@@ -1040,7 +1040,7 @@ en:
         email: E-mail Address
         password: Password
       identity:
-        email: Example：xiaobai@example.com
+        email: Example：mauro@example.com
         password: Please set your login password
         password_confirmation: Confirm your password
         edit:
@@ -1055,7 +1055,7 @@ en:
         origin_volume: Sell Volume
         sum: Total Turnover
       reset_password:
-        email: For example：xiaobai@example.com
+        email: For example：mauro@example.com
         password: Please set your login password!
       withdraw:
         bank:
@@ -1401,10 +1401,10 @@ en:
     footer: This is an automatically generated email, please do not reply, if you have any question, please <a href="mailto:%{contact_mail}">contact us</a>.
   comment_mailer:
     admin_notification:
-      subject: "[PEATIO] User reply a ticket"
+      subject: "[Hitback] User reply a ticket"
       notification_content: User %{email} reply a ticket, please follow the link below to see the detail
     user_notification:
-      subject: "[PEATIO] Your ticket got a new reply"
+      subject: "[Hitback] Your ticket got a new reply"
       notification_content: 'Your ticket got a new reply, please follow the link below to see the detail:'
   deposit_mailer:
     accepted:
@@ -1412,25 +1412,25 @@ en:
       content: Your %{currency} deposit has been credited into your account.
   member_mailer:
     notify_signin:
-      subject: "[PEATIO] You have just signed in"
+      subject: "[Hitback] You have just signed in"
       just_signed_in: You have just signed in.
     google_auth_activated:
-      subject: "[PEATIO] Google authenticator activated"
+      subject: "[Hitback] Google authenticator activated"
       google_auth_activated: You have activated google authenticator successfully
     google_auth_deactivated:
-      subject: "[PEATIO] Google authenticator deactivated"
+      subject: "[Hitback] Google authenticator deactivated"
       google_auth_deactivated: You have deactivated google authenticator successfully
     sms_auth_activated:
-      subject: "[PEATIO] SMS authenticator activated"
+      subject: "[Hitback] SMS authenticator activated"
       sms_auth_activated: You have activated SMS authenticator successfully
     sms_auth_deactivated:
-      subject: "[PEATIO] SMS authenticator deactivated"
+      subject: "[Hitback] SMS authenticator deactivated"
       sms_auth_deactivated: You have deactivated SMS authenticator successfully
     reset_password_done:
-      subject: "[PEATIO] Your password changed"
+      subject: "[Hitback] Your password changed"
       successful: Your password has been changed successfully.
     phone_number_verified:
-      subject: "[PEATIO] Your phone number verified"
+      subject: "[Hitback] Your phone number verified"
       verified: 'Your phone number verified: %{phone_number}'
   system_mailer:
     daily_stats:
@@ -1443,10 +1443,10 @@ en:
       trades_change_total: Trades Changes Total
   ticket_mailer:
     admin_notification:
-      subject: "[PEATIO] User created a new ticket"
+      subject: "[Hitback] User created a new ticket"
       admin_notification_content: User %{email} created a new ticket, please follow the link below to see the detail
     author_notification:
-      subject: "[PEATIO] Thank you for submit ticket"
+      subject: "[Hitback] Thank you for submit ticket"
       thanks_for_submit_ticket: Thank you for submit ticket to us, we will get back to you as soon as possible.
   token_mailer:
     activation:

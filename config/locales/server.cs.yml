@@ -1050,7 +1050,7 @@ cs:
         origin_volume: Objem prodejů
         sum: Celkový obrat
       reset_password:
-        email: Příklad：xiaobai@example.com
+        email: Příklad：mauro@example.com
         password: Prosím nastavte Vaše přihlašovací heslo!
       withdraw:
         bank:
@@ -1374,10 +1374,10 @@ cs:
     footer: Toto je automaticky generovaný email, prosím neodpovídejte, pokud máte nějaký dotaz, prosím <a href="mailto:%{contact_mail}">kontaktujte nás</a>.
   comment_mailer:
     admin_notification:
-      subject: "[PEATIO] Uživatel odpověděl na tiket"
+      subject: "[Hitback] Uživatel odpověděl na tiket"
       notification_content: Uživatel %{email} odpověděl na tiket, prosím zobrazte link níže pro další detaily.
     user_notification:
-      subject: "[PEATIO] Váš tiket má novou odpověď"
+      subject: "[Hitback] Váš tiket má novou odpověď"
       notification_content: 'Váš tiket má novou odpověď, prosím zobrazte link níže pro další detaily:'
   deposit_mailer:
     deposit_accepted:
@@ -1385,25 +1385,25 @@ cs:
       content: Váš %{currency} vklad byl vložen na Váš účet.
   member_mailer:
     notify_signin:
-      subject: "[PEATIO] Byl jste přihlášen"
+      subject: "[Hitback] Byl jste přihlášen"
       just_signed_in: Byl jste přihlášen.
     google_auth_activated:
-      subject: "[PEATIO] Google Authentifikátor aktivován"
+      subject: "[Hitback] Google Authentifikátor aktivován"
       google_auth_activated: Aktivoval jste úspěšně Google Autentifikátor.
     google_auth_deactivated:
-      subject: "[PEATIO] Google Authentifikátor deaktivován"
+      subject: "[Hitback] Google Authentifikátor deaktivován"
       google_auth_deactivated: Deaktivoval jste úspěšně Google Autentifikátor.
     sms_auth_activated:
-      subject: "[PEATIO] SMS autentifikace aktivována"
+      subject: "[Hitback] SMS autentifikace aktivována"
       sms_auth_activated: Aktivoval jste úspěšně SMS Autentifikátor.
     sms_auth_deactivated:
-      subject: "[PEATIO] SMS autentifikace deaktivována"
+      subject: "[Hitback] SMS autentifikace deaktivována"
       sms_auth_deactivated: Deaktivoval jste úspěšně SMS Autentifikátor.
     reset_password_done:
-      subject: "[PEATIO] Vaše heslo bylo změněno"
+      subject: "[Hitback] Vaše heslo bylo změněno"
       successful: Vaše heslo bylo úspěšně změněno.
     phone_number_verified:
-      subject: "[PEATIO] Vaše telefonní číslo ověřeno."
+      subject: "[Hitback] Vaše telefonní číslo ověřeno."
       verified: 'Vaše ověřené telefonní číslo: %{phone_number}'
   system_mailer:
     daily_stats:
@@ -1416,10 +1416,10 @@ cs:
       trades_change_total: Obchody změněny Celkem
   ticket_mailer:
     admin_notification:
-      subject: "[PEATIO] Uživatel vytvořil nový tiket"
+      subject: "[Hitback] Uživatel vytvořil nový tiket"
       admin_notification_content: Uživatel %{email} vytvořil nový tiket, prosím zobrazte link níže pro další dataily
     author_notification:
-      subject: "[PEATIO] Děkujeme Vám za odeslání tiketu"
+      subject: "[Hitback] Děkujeme Vám za odeslání tiketu"
       thanks_for_submit_ticket: Děkujeme Vám za odeslání tiketu, budeme Vás kontaktovat co nejdříve.
   token_mailer:
     activation:
