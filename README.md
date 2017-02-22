@@ -1,4 +1,4 @@
-An open-source crypto currency exchange
+An open-source crypto currency exchange - [Hitback](http://market.hitback.us)
 =====================================
 
 ### Features
