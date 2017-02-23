@@ -1,4 +1,4 @@
-An open-source crypto currency exchange - [Hitback](http://market.hitback.us)
+An open-source crypto currency exchange - [Hitback Exchange](https://market.hitback.us)
 =====================================
 
 ### Features
@@ -50,11 +50,11 @@ You can interact with Hitback through API:
 
 Here're some API clients and/or wrappers:
 
-* [hitback-client-ruby](https://github.com/hitback/hitback-client-ruby) is the official ruby client of both HTTP/Websocket API.
-* [hitback-client-python by JohnnyZhao](https://github.com/JohnnyZhao/hitback-client-python) is a python client written by JohnnyZhao.
-* [hitback-client-python by czheo](https://github.com/JohnnyZhao/hitback-client-python) is a python wrapper similar to hitback-client-ruby written by czheo.
-* [hitbackJavaClient](https://github.com/classic1999/hitbackJavaClient.git) is a java client written by classic1999.
-* [yunbi-client-php](https://github.com/panlilu/yunbi-client-php) is a php client written by panlilu.
+* [hitback-client-ruby] ruby client of both HTTP/Websocket API.
+* [hitback-client-python] python client written.
+* [hitback-client-python] python wrapper.
+* [hitbackJavaClient] java client written.
+* [yunbi-client-php]php client.
 
 ### Custom Style
 
@@ -68,5 +68,3 @@ Hitback front-end based Bootstrap 3.0 version and Sass, and you can custom excha
 
 `vars/_custom.css.scss` can overwrite `vars/_basic.css.scss` defined variables
 `layout/_custom.css.scss` can overwrite `layout/_basic.css.scss` and `layoputs/_header.css.scss` style
-
-### Getting Involved
