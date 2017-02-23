@@ -39,7 +39,7 @@ class Currency < ActiveYamlBase
   end
 
   def balance_cache_key
-    "hitback:hotwallet:#{code}:balance"
+    "peatio:hotwallet:#{code}:balance"
   end
 
   def balance

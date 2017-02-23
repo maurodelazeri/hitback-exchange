@@ -144,11 +144,11 @@ class Member < ActiveRecord::Base
   end
 
   def get_account(currency)
-    account = accounts.with_currency(currency.to_sym).first
+    account = accounts.with_currency(currency.to_sym).last
 
     if account.nil?
       touch_accounts
-      account = accounts.with_currency(currency.to_sym).first
+      account = accounts.with_currency(currency.to_sym).last
     end
 
     account
@@ -168,7 +168,7 @@ class Member < ActiveRecord::Base
   end
 
   def auth(name)
-    authentications.where(provider: name).first
+    authentications.where(provider: name).last
   end
 
   def auth_with?(name)

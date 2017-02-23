@@ -25,7 +25,7 @@ class SessionsController < ApplicationController
         clear_failed_logins
         reset_session rescue nil
         session[:member_id] = @member.id
-        save_session_key @member.id, cookies['_hitback_session']
+        save_session_key @member.id, cookies['_peatio_session']
         save_signup_history @member.id
         MemberMailer.notify_signin(@member.id).deliver if @member.activated?
         redirect_back_or_settings_page
@@ -66,7 +66,7 @@ class SessionsController < ApplicationController
   end
 
   def failed_login_key
-    "hitback:session:#{request.ip}:failed_logins"
+    "peatio:session:#{request.ip}:failed_logins"
   end
 
   def auth_hash

@@ -18,7 +18,7 @@ module Worker
     end
 
     def key_for(period)
-      "hitback:stats:top:#{@market.id}:#{period}"
+      "peatio:stats:top:#{@market.id}:#{period}"
     end
 
     def point_n(from, period)
