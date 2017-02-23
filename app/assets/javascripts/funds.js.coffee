@@ -5,7 +5,7 @@
 #= require angular
 #= require angular-resource
 #= require ./lib/angular-ui-router
-#= require ./lib/peatio_model
+#= require ./lib/hitback_model
 #= require ./lib/ajax
 
 #= require ./lib/pusher_connection

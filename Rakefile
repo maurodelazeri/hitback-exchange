@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Peatio::Application.load_tasks
+Hitback::Application.load_tasks

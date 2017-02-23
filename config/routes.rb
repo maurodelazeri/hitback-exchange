@@ -6,7 +6,7 @@ class ActionDispatch::Routing::Mapper
   end
 end
 
-Peatio::Application.routes.draw do
+Hitback::Application.routes.draw do
   use_doorkeeper
 
   root 'welcome#index'

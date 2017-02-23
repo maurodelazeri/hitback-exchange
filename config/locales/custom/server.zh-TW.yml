@@ -716,7 +716,7 @@ zh-TW:
         title: 資產證明
         intro: 我們將銀行賬戶，比特幣錢包地址，以及用戶存款總額公開以便用戶時刻瞭解我們的資產狀況；我們提供的數字證明能證明我們提供的存款總額數據是真實的。我們通過技術手段來保證您的資金處於隨時能夠提取的狀態。
         how-to-verify: 如何驗證交易所具備償付能力？
-        how-to-verify-uri: https://peatio.com/documents/liability_proof
+        how-to-verify-uri: https://hitback.com/documents/liability_proof
       liability_data:
         liability-proof-generating: 用戶資產證明正在生成中，請30分鐘後再來。
         root-json: 交易所總資產驗證代碼
@@ -1278,10 +1278,10 @@ zh-TW:
     scopes:
       profile: 讀取您的基本賬戶信息(如姓名, 郵件地址)和賬戶餘額
       history: 讀取您的掛單和成交記錄
-      trade: 代表您在Peatio上進行交易
+      trade: 代表您在Hitback上進行交易
     authorizations:
       new:
-        title: Peatio 第三方應用授權
+        title: Hitback 第三方應用授權
         authorize_html: 確定要授權 <strong class='text-info'>%{name}</strong> 使用您的賬戶嗎？
         scopes: '該應用將獲得如下權限：'
         authorize: 同意
@@ -1457,12 +1457,12 @@ zh-TW:
       thanks_for_submit_ticket: 感謝您的反饋。我們會盡快處理，並第一時間告知您相關進展。
   token_mailer:
     activation:
-      subject: "[Peatio] 帳號激活"
-      click_to_verify: '感謝您註冊 Peatio，趕快點擊下面的鏈接驗證您的E-mail吧：'
+      subject: "[Hitback] 帳號激活"
+      click_to_verify: '感謝您註冊 Hitback，趕快點擊下面的鏈接驗證您的E-mail吧：'
       unable_to_click: 如果鏈接無法點擊，請完整拷貝到瀏覽器地址欄裡直接訪問。
       link_expire: 鏈接30分鐘之內有效。
     reset_password:
-      subject: "[Peatio] 請重置您的密碼"
+      subject: "[Hitback] 請重置您的密碼"
       hi: 您好
       follow_the_link: '請使用下面的連接，在30分鐘之內嘗試重置您的登錄密碼：'
   withdraw_mailer:
@@ -1493,9 +1493,9 @@ zh-TW:
   gon:
     ask: 賣出
     bid: 買入
-    brand: Peatio交易所
+    brand: Hitback交易所
     notification:
-      title: Peatio交易所
+      title: Hitback交易所
       enabled: 實時更新已開啟。
       new_trade: "您的%{kind}委託 #%{id} 以 %{price} %{quote_unit} 價格成交，%{kind} %{volume} %{base_unit}。"
   back: 返回

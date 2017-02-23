@@ -81,7 +81,7 @@ module APIv2
     end
 
     def get_k_json
-      key = "peatio:#{params[:market]}:k:#{params[:period]}"
+      key = "hitback:#{params[:market]}:k:#{params[:period]}"
 
       if params[:timestamp]
         ts = JSON.parse(redis.lindex(key, 0)).first

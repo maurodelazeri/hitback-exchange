@@ -463,7 +463,7 @@ en:
     satoshi:
       key: Block Chain
       title: Bitcoin Deposits
-      intro: Deposit bitcoin from your own wallet address to Peatio account
+      intro: Deposit bitcoin from your own wallet address to Hitback account
       latency: 1 confirmation
       transfer: Manual
       go: Deposit
@@ -621,7 +621,7 @@ en:
       view_open_tickets: View open tickets
     account_versions:
       index:
-        description: Every transaction and every penny of income in Peatio are well
+        description: Every transaction and every penny of income in Hitback are well
           documented and exhaustive.
     api_tokens:
       user_tokens:
@@ -682,7 +682,7 @@ en:
           this page, we present you our liabilities. We also provide you a way to
           verify that your account balance is indeed part of our liabilities.
         how-to-verify: How to verify an exchange is solvent?
-        how-to-verify-uri: https://peatio.com/documents/liability_proof
+        how-to-verify-uri: https://hitback.com/documents/liability_proof
       liability_data:
         liability-proof-generating: Proof of Liability generation in process, please
           come back after 30 minutes.
@@ -1016,15 +1016,15 @@ en:
       panel: Login
       new:
         title: Login my account
-        intro: Login Peatio now for you to exchange.
+        intro: Login Hitback now for you to exchange.
       failure:
         title: Login my account
-        intro: Login Peatio now for you to exchange.
+        intro: Login Hitback now for you to exchange.
     identities:
       panel: Create Account
       new:
         title: Create My Account
-        intro: This will be your only ID on Peatio which is necessary for your exchange
+        intro: This will be your only ID on Hitback which is necessary for your exchange
           , deposit and withdrawal . please fill it out carefully.
       edit:
         panel: My Account
@@ -1261,7 +1261,7 @@ en:
       trade: Submit and cancel orders
     authorizations:
       new:
-        title: Peatio Application Authorization
+        title: Hitback Application Authorization
         authorize_html: Authorize <strong class='text-info'>%{name}</strong> to use
           your account?
         scopes: 'This application will be able to:'
@@ -1396,7 +1396,7 @@ en:
 
   mailer:
     dear_user: Dear user,
-    signature: Thanks,<br/>The Peatio Team
+    signature: Thanks,<br/>The Hitback Team
     please_contact: If it's not you, please <a href='mailto:%{contact_mail}'>contact us</a> ASAP.
     footer: This is an automatically generated email, please do not reply, if you have any question, please <a href="mailto:%{contact_mail}">contact us</a>.
   comment_mailer:
@@ -1408,7 +1408,7 @@ en:
       notification_content: 'Your ticket got a new reply, please follow the link below to see the detail:'
   deposit_mailer:
     accepted:
-      subject: "[Peatio] Your deposit has been credited into your account"
+      subject: "[Hitback] Your deposit has been credited into your account"
       content: Your %{currency} deposit has been credited into your account.
   member_mailer:
     notify_signin:
@@ -1450,26 +1450,26 @@ en:
       thanks_for_submit_ticket: Thank you for submit ticket to us, we will get back to you as soon as possible.
   token_mailer:
     activation:
-      subject: "[Peatio] Account Activation"
-      click_to_verify: 'Thank you for signing up on Peatio, please follow this link to verify your Email:'
+      subject: "[Hitback] Account Activation"
+      click_to_verify: 'Thank you for signing up on Hitback, please follow this link to verify your Email:'
       unable_to_click: Copy and open the link in your browser if you are unable to click and visit it.
       link_expire: The link expires in 30 minutes.
     reset_password:
-      subject: "[Peatio] Please Reset Your Password"
+      subject: "[Hitback] Please Reset Your Password"
       hi: Hi,
       follow_the_link: 'Please follow this link to reset your password within 30 minutes:'
   withdraw_mailer:
     submitted:
-      subject: "[Peatio] Your withdraw state update"
+      subject: "[Hitback] Your withdraw state update"
       content: The request of your %{currency} withdrawal has been successfully submitted, We will process it as soon as possible. Please be patient with us. Contact us if you have any questions.
     processing:
-      subject: "[Peatio] Your withdraw state update"
+      subject: "[Hitback] Your withdraw state update"
       content: The request of your %{currency} withdrawal is in process. Please be patient with us. Contact us if you have any questions.
     done:
-      subject: "[Peatio] Your withdraw state update"
+      subject: "[Hitback] Your withdraw state update"
       content: The request of your %{currency} withdrawal is complete. Please check it out. Contact us if you have any questions.
     withdraw_state:
-      subject: "[Peatio] Your withdraw state update"
+      subject: "[Hitback] Your withdraw state update"
       your_state: 'Your withdrawal state: '
 
   'true': true
@@ -1489,9 +1489,9 @@ en:
   gon:
     ask: Ask
     bid: Bid
-    brand: Peatio Exchange
+    brand: Hitback Exchange
     notification:
-      title: Peatio Exchange
+      title: Hitback Exchange
       enabled: Notification enabled.
       new_trade: "%{kind} order#%{id} executed at %{price} %{quote_unit} for %{volume} %{base_unit}。"
   back: Back
@@ -1698,9 +1698,9 @@ en:
     application:
       close: Close
     meta:
-      page_title: Peatio - The Opensource Cryptocurrency Exchange
-      page_description: Peatio - The Opensource Cryptocurrency Exchange
-      page_keywords: Peatio,Opensource,Exchange,Cryptocurrency
+      page_title: Hitback - The Opensource Cryptocurrency Exchange
+      page_description: Hitback - The Opensource Cryptocurrency Exchange
+      page_keywords: Hitback,Opensource,Exchange,Cryptocurrency
   members:
     edit:
       name: Please fill out the application.
@@ -1784,7 +1784,7 @@ en:
       edit:
         submit: Disable
         warning: 'Tip: If you have lost your Two-Factor Authentication by some reason
-          and can''t login your Peatio account, please contact our online customer
+          and can''t login your Hitback account, please contact our online customer
           service.'
       show:
         step-1: Step 1

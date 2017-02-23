@@ -4,7 +4,7 @@ namespace :stats do
     if currency.code != 'cny'
       redis = KlineDB.redis
       market = Market.find "#{currency.code}cny"
-      key = "peatio:#{market.id}:k:60"
+      key = "hitback:#{market.id}:k:60"
       last_hour = 23.hours.since(Time.at ts)
 
       if redis.llen(key) > 0

@@ -1,4 +1,4 @@
-Peatio::Application.configure do
+Hitback::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
   # In the development environment your application's code is reloaded on
@@ -17,7 +17,7 @@ Peatio::Application.configure do
   # config.cache_store = :file_store, "tmp"
   config.cache_store = :redis_store, ENV['REDIS_URL']
 
-  config.session_store :redis_store, :key => '_peatio_session', :expire_after => ENV['SESSION_EXPIRE'].to_i.minutes
+  config.session_store :redis_store, :key => '_hitback_session', :expire_after => ENV['SESSION_EXPIRE'].to_i.minutes
 
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false

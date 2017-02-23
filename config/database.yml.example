@@ -1,7 +1,7 @@
 development: &defaults
   adapter: mysql2
   encoding: utf8
-  database: peatio_development
+  database: hitback_development
   username: root
   password:
   pool: 10
@@ -9,8 +9,8 @@ development: &defaults
 
 test:
   <<: *defaults
-  database: peatio_test
+  database: hitback_test
 
 production:
   <<: *defaults
-  database: peatio_production
+  database: hitback_production

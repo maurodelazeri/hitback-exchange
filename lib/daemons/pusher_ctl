@@ -11,7 +11,7 @@ num.times do |i|
   else
     config = Daemons::Rails::Config.for_controller(File.expand_path(__FILE__))
 
-    config[:app_name] = "peatio:amqp:pusher:#{i+1}"
+    config[:app_name] = "hitback:amqp:pusher:#{i+1}"
     config[:script]   = "#{File.expand_path('../amqp_daemon.rb', __FILE__)}"
     config[:ARGV]     = ARGV + %w(-- pusher_market pusher_member)
 

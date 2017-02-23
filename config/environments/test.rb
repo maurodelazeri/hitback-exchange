@@ -1,4 +1,4 @@
-Peatio::Application.configure do
+Hitback::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
   # The test environment is used exclusively to run your application's
@@ -35,5 +35,5 @@ Peatio::Application.configure do
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
 
-  config.session_store :cookie_store, :key => '_peatio_session', :expire_after => ENV['SESSION_EXPIRE'].to_i.minutes
+  config.session_store :cookie_store, :key => '_hitback_session', :expire_after => ENV['SESSION_EXPIRE'].to_i.minutes
 end

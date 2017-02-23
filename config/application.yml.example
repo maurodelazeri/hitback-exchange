@@ -3,10 +3,10 @@ defaults: &defaults
   # sites hosts
   # session expire seconds
   # admin role account
-  URL_HOST: peatio.dev:3000
+  URL_HOST: hitback.dev:3000
   URL_SCHEMA: http
   SESSION_EXPIRE: 60
-  ADMIN: 'admin@peatio.dev,admin@example.com'
+  ADMIN: 'admin@hitback.dev,admin@example.com'
   TIMEZONE: 'Beijing'
 
   REDIS_URL: redis://127.0.0.1:6379
@@ -21,10 +21,10 @@ defaults: &defaults
   SMTP_PASSWORD: YOUR_SMTP_PASSWORD
   SMTP_AUTHENTICATION: plain # could be plain, login or cram_md5
 
-  SUPPORT_MAIL: support@peatio.dev
-  SYSTEM_MAIL_FROM: system@peatio.dev
-  SYSTEM_MAIL_TO: group@peatio.dev
-  OPERATE_MAIL_TO: support@peatio.dev
+  SUPPORT_MAIL: support@hitback.dev
+  SYSTEM_MAIL_FROM: system@hitback.dev
+  SYSTEM_MAIL_TO: group@hitback.dev
+  OPERATE_MAIL_TO: support@hitback.dev
 
   # WebSocket Streaming API settings
   # --------------------------------------------------------------
@@ -36,7 +36,7 @@ defaults: &defaults
 
   # pusher settings
   # --------------------------------------------------------------
-  # peatio dependence Pusher (http://pusher.com) service
+  # hitback dependence Pusher (http://pusher.com) service
   # you can change your key for production environment.
   # we support development key and secret
   # uncomment below line only development or test
@@ -74,7 +74,7 @@ defaults: &defaults
   # chat setting
   # --------------------------------------------------------------
   # Do you want chat feature in your exchange ?
-  # send mail to community@peatio.com
+  # send mail to community@hitback.com
 
 development:
   <<: *defaults

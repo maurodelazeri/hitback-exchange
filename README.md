@@ -50,10 +50,10 @@ You can interact with Hitback through API:
 
 Here're some API clients and/or wrappers:
 
-* [peatio-client-ruby](https://github.com/peatio/peatio-client-ruby) is the official ruby client of both HTTP/Websocket API.
-* [peatio-client-python by JohnnyZhao](https://github.com/JohnnyZhao/peatio-client-python) is a python client written by JohnnyZhao.
-* [peatio-client-python by czheo](https://github.com/JohnnyZhao/peatio-client-python) is a python wrapper similar to peatio-client-ruby written by czheo.
-* [peatioJavaClient](https://github.com/classic1999/peatioJavaClient.git) is a java client written by classic1999.
+* [hitback-client-ruby](https://github.com/hitback/hitback-client-ruby) is the official ruby client of both HTTP/Websocket API.
+* [hitback-client-python by JohnnyZhao](https://github.com/JohnnyZhao/hitback-client-python) is a python client written by JohnnyZhao.
+* [hitback-client-python by czheo](https://github.com/JohnnyZhao/hitback-client-python) is a python wrapper similar to hitback-client-ruby written by czheo.
+* [hitbackJavaClient](https://github.com/classic1999/hitbackJavaClient.git) is a java client written by classic1999.
 * [yunbi-client-php](https://github.com/panlilu/yunbi-client-php) is a php client written by panlilu.
 
 ### Custom Style
@@ -61,7 +61,7 @@ Here're some API clients and/or wrappers:
 Hitback front-end based Bootstrap 3.0 version and Sass, and you can custom exchange style for your mind.
 
 * change bootstrap default variables in `vars/_bootstrap.css.scss`
-* change peatio custom default variables in `vars/_basic.css.scss`
+* change hitback custom default variables in `vars/_basic.css.scss`
 * add your custom variables in `vars/_custom.css.scss`
 * add your custom css style in `layouts/_custom.css.scss`
 * add or change features style in `features/_xyz.css.scss'

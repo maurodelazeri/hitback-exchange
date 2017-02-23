@@ -694,7 +694,7 @@ cs:
         title: Důkaz aktiv
         intro: Ve směnárně, naše závazky jsou celkovým množství peněz (v kryptoměnách a Fiat měnách), které jsou našich uživatelů kterým děkujeme za důvěru. Na této stránce vám předkládáme naše závazky. Poskytujeme také vám způsob, jak ověřit, že zůstatek účtu je skutečně součástí našich závazků.
         how-to-verify: Jak ověřit je-li směnárna solventní?
-        how-to-verify-uri: https://peatio.com/documents/liability_proof
+        how-to-verify-uri: https://hitback.com/documents/liability_proof
       liability_data:
         liability-proof-generating: Důkaz závazků se generuje, prosím vraťte se po 30 minutách.
         root-json: Root node
@@ -1248,7 +1248,7 @@ cs:
       trade: Odeslat a stornovat objednávky
     authorizations:
       new:
-        title: Peatio Applikace Autorizace
+        title: Hitback Applikace Autorizace
         authorize_html: Autorizovat <strong class='text-info'>%{name}</strong> pro Váš účet?
         scopes: 'Tato aplikace je zde:'
         authorize: Autorizovat
@@ -1369,7 +1369,7 @@ cs:
       truncate: "..."
   mailer:
     dear_user: Vážený uživateli,
-    signature: Děkujeme,<br/>Peatio Team
+    signature: Děkujeme,<br/>Hitback Team
     please_contact: Pokud to nejste vy, prosím <a href='mailto:%{contact_mail}'>kontaktujte nás</a> NEPRODLENĚ.
     footer: Toto je automaticky generovaný email, prosím neodpovídejte, pokud máte nějaký dotaz, prosím <a href="mailto:%{contact_mail}">kontaktujte nás</a>.
   comment_mailer:
@@ -1381,7 +1381,7 @@ cs:
       notification_content: 'Váš tiket má novou odpověď, prosím zobrazte link níže pro další detaily:'
   deposit_mailer:
     deposit_accepted:
-      subject: "[Peatio] Váš vklad byl vložen na Váš účet"
+      subject: "[Hitback] Váš vklad byl vložen na Váš účet"
       content: Váš %{currency} vklad byl vložen na Váš účet.
   member_mailer:
     notify_signin:
@@ -1423,26 +1423,26 @@ cs:
       thanks_for_submit_ticket: Děkujeme Vám za odeslání tiketu, budeme Vás kontaktovat co nejdříve.
   token_mailer:
     activation:
-      subject: "[Peatio] Aktivace účtu"
+      subject: "[Hitback] Aktivace účtu"
       click_to_verify: 'Děkujeme za registraci, prosím zobrazte link níže a ověřte tak Vaši emailovou adresu:'
       unable_to_click: Zkopírujte link a otevřete ve vašem prohlížeči, pokud máte deaktivovánu možnost kliknutí na link a zobrazení.
       link_expire: Link vyprší za 30 minut.
     reset_password:
-      subject: "[Peatio] Prosím resetujte Své heslo"
+      subject: "[Hitback] Prosím resetujte Své heslo"
       hi: Ahoj,
       follow_the_link: 'Prosím použijte tento link pro resetování hesla během následujících 30 minut:'
   withdraw_mailer:
     withdraw_submitted:
-      subject: "[Peatio] Stav vašeho výběru byl aktualizován"
+      subject: "[Hitback] Stav vašeho výběru byl aktualizován"
       content: Žádost o %{currency} výběr byla úspěšně odeslána, Bude zpracována co nejdříve. Prosím, buďte trpěliví. Napište nám, pokud máte nějaké dotazy.
     withdraw_processing:
-      subject: "[Peatio] Stav vašeho výběru byl aktualizován"
+      subject: "[Hitback] Stav vašeho výběru byl aktualizován"
       content: Žádost o Váš %{currency} výběr je zpracovávána. Prosím, buďte trpěliví. Napište nám, pokud máte nějaké dotazy.
     withdraw_done:
-      subject: "[Peatio] Stav vašeho výběru byl aktualizován"
+      subject: "[Hitback] Stav vašeho výběru byl aktualizován"
       content: Žádost o Váš %{currency} výběr je dokončena. Prosím, zkontrolujte doručení. Napište nám, pokud máte nějaké dotazy.
     withdraw_state:
-      subject: "[Peatio] Stav vašeho výběru byl aktualizován"
+      subject: "[Hitback] Stav vašeho výběru byl aktualizován"
       your_state: 'Stav Vašeho výběru:'
   view_on_github: Zobrazit na Github
   slogan: An open-source crypto-currency exchange for world.
@@ -1459,9 +1459,9 @@ cs:
   gon:
     ask: Poptávka
     bid: Nabídka
-    brand: Peatio Exchange
+    brand: Hitback Exchange
     notification:
-      title: Peatio Exchange
+      title: Hitback Exchange
       enabled: Notifikace aktivní
       new_trade: "%{kind} objednávka#%{id} zpracována %{price} %{quote_unit} objem %{volume} %{base_unit}。"
   back: Zpět
@@ -1666,9 +1666,9 @@ cs:
     application:
       close: Zavřít
     meta:
-      page_title: Peatio - The Opensource Cryptocurrency Exchange
-      page_description: Peatio - The Opensource Cryptocurrency Exchange
-      page_keywords: Peatio,Opensource,Exchange,Cryptocurrency
+      page_title: Hitback - The Opensource Cryptocurrency Exchange
+      page_description: Hitback - The Opensource Cryptocurrency Exchange
+      page_keywords: Hitback,Opensource,Exchange,Cryptocurrency
   members:
     edit:
       name: Vyplňte prosím aplikaci.

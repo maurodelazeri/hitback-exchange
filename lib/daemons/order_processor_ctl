@@ -10,7 +10,7 @@ num.times do |i|
   else
     config = Daemons::Rails::Config.for_controller(File.expand_path(__FILE__))
 
-    config[:app_name] = "peatio:amqp:order_processor:#{i+1}"
+    config[:app_name] = "hitback:amqp:order_processor:#{i+1}"
     config[:script]   = "#{File.expand_path('../amqp_daemon.rb', __FILE__)}"
     config[:ARGV]     = ARGV + %w(-- order_processor)
 

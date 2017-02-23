@@ -1,8 +1,8 @@
-class Account extends PeatioModel.Model
+class Account extends HitbackModel.Model
   @configure 'Account', 'member_id', 'currency', 'balance', 'locked', 'created_at', 'updated_at', 'in', 'out', 'deposit_address', 'name_text'
 
   @initData: (records) ->
-    PeatioModel.Ajax.disable ->
+    HitbackModel.Ajax.disable ->
       $.each records, (idx, record) ->
         Account.create(record)
 

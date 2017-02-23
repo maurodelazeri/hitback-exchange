@@ -1,4 +1,4 @@
-# ActionController::Base are used by both Peatio controllers and
+# ActionController::Base are used by both Hitback controllers and
 # Doorkeeper controllers.
 class ActionController::Base
 

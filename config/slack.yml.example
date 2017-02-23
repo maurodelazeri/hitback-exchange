@@ -1,9 +1,9 @@
 staging: &defaults
   payload:
-    channel: '#peatio'
+    channel: '#hitback'
     username: minabot
   token: ~
-  hook_url: https://peatio.slack.com/services/hooks/incoming-webhook?token=
+  hook_url: https://hitback.slack.com/services/hooks/incoming-webhook?token=
 
 production:
   <<: *defaults

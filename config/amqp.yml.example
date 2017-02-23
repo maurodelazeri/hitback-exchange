@@ -4,46 +4,46 @@ connect:
 
 exchange:
   trade:
-    name: peatio.trade
+    name: hitback.trade
     type: headers
   notification:
-    name: peatio.notification
+    name: hitback.notification
     type: direct
   orderbook:
-    name: peatio.orderbook
+    name: hitback.orderbook
     type: fanout
 
 queue:
   matching:
-    name: peatio.matching
+    name: hitback.matching
     durable: true
   slave_book:
-    name: peatio.orderbook.slave
+    name: hitback.orderbook.slave
     durable: true
   new_trade:
-    name: peatio.trade.new
+    name: hitback.trade.new
     durable: true
   order_processor:
-    name: peatio.order.processor
+    name: hitback.order.processor
     durable: true
   market_ticker:
-    name: peatio.trade.market_ticker
+    name: hitback.trade.market_ticker
   pusher_market:
-    name: peatio.pusher.market
+    name: hitback.pusher.market
   pusher_member:
-    name: peatio.pusher.member
+    name: hitback.pusher.member
   withdraw_coin:
-    name: peatio.withdraw.coin
+    name: hitback.withdraw.coin
   deposit_coin:
-    name: peatio.deposit.coin
+    name: hitback.deposit.coin
   deposit_coin_address:
-    name: peatio.deposit.coin.address
+    name: hitback.deposit.coin.address
     durable: true
   email:
-    name: peatio.notification.email
+    name: hitback.notification.email
     durable: true
   sms:
-    name: peatio.notification.sms
+    name: hitback.notification.sms
     durable: true
 
 binding:
