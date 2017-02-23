@@ -15,8 +15,6 @@ An open-source crypto currency exchange - [Hitback Exchange](https://market.hitb
 * [KYC Verification](http://en.wikipedia.org/wiki/Know_your_customer).
 * Powerful admin dashboard and management tools.
 * Highly configurable and extendable.
-* Industry standard security out of box.
-* Active community behind.
 * Free and open-source.
 * Maintained by [Mauro Delazeri - maurodelazeri@gmail.com]
 
@@ -37,9 +35,7 @@ An open-source crypto currency exchange - [Hitback Exchange](https://market.hitb
 
 ### Getting started
 
-* [Setup on Mac OS X](doc/setup-local-osx.md)
-* [Setup on Ubuntu](doc/setup-local-ubuntu.md)
-* [Deploy production server](doc/deploy-production-server.md)
+* [Setup on Ubuntu 16.04](doc/setup-local-ubuntu.md)
 
 ### API
 
