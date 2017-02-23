@@ -516,25 +516,25 @@ makeArray = (args) ->
 
 # Globals
 
-PeatioModel = @PeatioModel= {}
-module?.exports  = PeatioModel
+HitbackModel = @HitbackModel= {}
+module?.exports  = HitbackModel
 
-PeatioModel.version    = '1.3.2.customizatiion'
-PeatioModel.isArray    = isArray
-PeatioModel.isBlank    = isBlank
-PeatioModel.$          = $
-PeatioModel.Events     = Events
-PeatioModel.Log        = Log
-PeatioModel.Module     = Module
-PeatioModel.Model      = Model
+HitbackModel.version    = '1.3.2.customizatiion'
+HitbackModel.isArray    = isArray
+HitbackModel.isBlank    = isBlank
+HitbackModel.$          = $
+HitbackModel.Events     = Events
+HitbackModel.Log        = Log
+HitbackModel.Module     = Module
+HitbackModel.Model      = Model
 
 # Global events
 
-Module.extend.call(PeatioModel, Events)
+Module.extend.call(HitbackModel, Events)
 
 Model.setup = (name, attributes = []) ->
   class Instance extends this
   Instance.configure(name, attributes...)
   Instance
 
-PeatioModel.Class = Module
+HitbackModel.Class = Module

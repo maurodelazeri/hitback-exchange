@@ -1,6 +1,6 @@
 .jumbotron
   h2 貔貅WebSocket数据接口 (WebSocket API)
-  small 接口URI: wss://peatio.com:8080
+  small 接口URI: wss://hitback.com:8080
   br
   small 返回结果格式: JSON
 
@@ -24,7 +24,7 @@
     p WebSocket是应用广泛的标准，各种语言都有自己的支持库。以Javascript为例:
     p Javascript:
     pre: code
-      | var host = 'wss://peatio.com:8080';
+      | var host = 'wss://hitback.com:8080';
         var socket = new WebSocket(host);
         socket.onopen = function() {
           console.log("opened");
@@ -39,8 +39,8 @@
         }
     p
       | 还可以参考貔貅官方Ruby客户端的实现:&nbsp;
-      a href='https://github.com/peatio/peatio-client-ruby/blob/master/lib/peatio_api/streaming_client.rb'
-        | https://github.com/peatio/peatio-client-ruby/blob/master/lib/peatio_api/streaming_client.rb
+      a href='https://github.com/hitback/hitback-client-ruby/blob/master/lib/hitback_api/streaming_client.rb'
+        | https://github.com/hitback/hitback-client-ruby/blob/master/lib/hitback_api/streaming_client.rb
 
 
 .panel.panel-default
@@ -68,8 +68,8 @@
       | {auth: {access_key: 'your_access_key', answer: 'the_signature'}}
     p
       | 更多信息可以参考貔貅官方Ruby客户端的实现:&nbsp;
-      a href='https://github.com/peatio/peatio-client-ruby/blob/master/lib/peatio_api/streaming_client.rb'
-        | https://github.com/peatio/peatio-client-ruby/blob/master/lib/peatio_api/streaming_client.rb
+      a href='https://github.com/hitback/hitback-client-ruby/blob/master/lib/hitback_api/streaming_client.rb'
+        | https://github.com/hitback/hitback-client-ruby/blob/master/lib/hitback_api/streaming_client.rb
 
 .panel.panel-default
   .panel-heading
@@ -140,5 +140,5 @@
   .panel-body
     ul
       li: h4
-        a href='http://github.com/peatio/peatio-client-ruby'
-          | peatio-client-ruby (ruby)
+        a href='http://github.com/hitback/hitback-client-ruby'
+          | hitback-client-ruby (ruby)

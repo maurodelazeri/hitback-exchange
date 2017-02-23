@@ -11,7 +11,7 @@ module Worker
     end
 
     def key_for(period)
-      "peatio:stats:funds:#{@currency.code}:#{period}"
+      "hitback:stats:funds:#{@currency.code}:#{period}"
     end
 
     def point_1(from)

@@ -21,7 +21,7 @@
 
   .panel-body
     pre: code
-      | GET https://peatio.com/oauth/authorize?client_id=&lt;your_client_id&gt;&redirect_uri=&lt;registered_rediret_uri&gt;&response_type=code&scope=&lt;scopes&gt;
+      | GET https://hitback.com/oauth/authorize?client_id=&lt;your_client_id&gt;&redirect_uri=&lt;registered_rediret_uri&gt;&response_type=code&scope=&lt;scopes&gt;
     p 'scope' is the authorizations you want to request. Hitback supports 3 scopes:
     ul
       li profile: basic user informations
@@ -39,7 +39,7 @@
   .panel-body
     p With auth code, your app can get user token (APIv2 access/secret key) by:
     pre: code
-      | POST https://peatio.com/oauth/token
+      | POST https://hitback.com/oauth/token
     pre: code
       | Params: client_id=&lt;your_client_id&gt;&client_secret=&lt;your_client_secret&gt;&code=&lt;auth_code&gt;&grant_type=authorization_code&redirect_uri=&lt;registered_rediret_uri&gt;
     p After validate the request, Hitback will return a user token and a refresh token. User token is a string including APIv2 access/secret key, in the format below:
@@ -59,7 +59,7 @@
       | {"error"=>{"code"=>2010, "message"=>"The access key xxxxx has expired."}}
     p When you see this error, get a new user token using the refresh token you got in last step:
     pre: code 
-      | POST https://peatio.com/oauth/token
+      | POST https://hitback.com/oauth/token
     pre: code 
       | Params: client_id=&lt;client_id&gt;&client_secret=&lt;client_secret&gt;&grant_type=refresh_token&refresh_token=&lt;refresh_token&gt;
 
