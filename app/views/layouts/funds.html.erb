@@ -3,7 +3,7 @@
   <head>
     <%- stylesheet = content_for?(:stylesheet) ? yield(:stylesheet) : "application" %>
 
-    <link href="/favicon.ico" rel="shortcut icon"></link>
+    <link href="https://s3-us-west-2.amazonaws.com/hitback/favicon.ico" rel="shortcut icon"></link>
     <%= include_gon %>
     <%= stylesheet_link_tag stylesheet, media: "all" %>
     <%= javascript_include_tag "locales/#{I18n.locale}" %>

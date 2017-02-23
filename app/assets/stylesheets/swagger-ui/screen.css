@@ -142,7 +142,7 @@ table {
 .swagger-ui-wrap p {
   line-height: 1.4em;
   padding: 0 0 10px;
-  color: #333333;
+  color: #00abf5;
 }
 .swagger-ui-wrap q:before,
 .swagger-ui-wrap q:after,
@@ -196,7 +196,7 @@ table {
 .swagger-ui-wrap ol li {
   padding: 5px 0px;
   font-size: 0.9em;
-  color: #333333;
+  color: #00abf5;
 }
 .swagger-ui-wrap ol,
 .swagger-ui-wrap ul {
@@ -308,7 +308,7 @@ table {
 .swagger-ui-wrap .markdown ul li {
   padding: 3px 0px;
   line-height: 1.4em;
-  color: #333333;
+  color: #00abf5;
 }
 .swagger-ui-wrap form.formtastic fieldset.inputs ol li.string input,
 .swagger-ui-wrap form.formtastic fieldset.inputs ol li.url input,
