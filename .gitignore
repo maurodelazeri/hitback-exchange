@@ -43,7 +43,8 @@ tags
 # Ignore RubyMine files
 .idea
 
-/vendor/bundle
+#/vendor/bundle
+/vendor
 .env
 .ruby-version
 .DS_Store
