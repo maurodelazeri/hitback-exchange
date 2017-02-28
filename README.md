@@ -1,22 +1,6 @@
 An open-source crypto currency exchange
 =====================================
 
-**I'LL BE BACK**
-
-[![Code Climate](https://codeclimate.com/github/hitback/hitback.png)](https://codeclimate.com/github/hitback/hitback)
-[![Build Status](https://travis-ci.org/hitback/hitback.png?branch=master)](https://travis-ci.org/hitback/hitback)
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/hitback/hitback?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-Hitback is a free and open-source crypto currency exchange implementation with the Rails framework and other cutting-edge technology.
-
-
-### Mission
-
-Our mission is to build the world best open-source crypto currency exchange with a high performance trading engine and safety which can be trusted and enjoyed by users. Additionally we want to move the crypto currency exchange technology forward by providing support and add new features. We are helping people to build easy their own exchange around the world.
-
-Help is greatly appreciated, feel free to submit pull-requests or open issues.
-
-
 ### Things You Should Know ###
 
 RUNNING A EXCHANGE IS HARD.
@@ -67,7 +51,7 @@ You must know what you're doing, there's no shortcut. Please get prepared before
 
 ### Requirements
 
-* Linux / Mac OSX
+* Linux
 * Ruby 2.1.0
 * Rails 4.0+
 * Git 1.7.10+
@@ -80,9 +64,10 @@ You must know what you're doing, there's no shortcut. Please get prepared before
 
 ### Getting started
 
-* [Setup on Mac OS X](doc/setup-local-osx.md)
-* [Setup on Ubuntu](doc/setup-local-ubuntu.md)
-* [Deploy production server](doc/deploy-production-server.md)
+* [DOCKER IMAGE]
+~~~
+docker run -p 80:80 -p 18080:18080 -p 443:443 -it -d theoraculo/hitback-exchange
+~~~
 
 ### API
 
