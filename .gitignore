@@ -18,7 +18,6 @@
 # Ignore all logfiles and tempfiles.
 log
 tmp
-letsencrypt.log
 
 # Ignore all config files
 /config/application.yml
@@ -43,8 +42,7 @@ tags
 # Ignore RubyMine files
 .idea
 
-#/vendor/bundle
-/vendor
+/vendor/bundle
 .env
 .ruby-version
 .DS_Store

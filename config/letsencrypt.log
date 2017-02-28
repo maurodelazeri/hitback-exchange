@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/usr/bin/letsencrypt", line 9, in <module>
+    load_entry_point('letsencrypt==0.4.1', 'console_scripts', 'letsencrypt')()
+  File "/usr/lib/python2.7/dist-packages/letsencrypt/cli.py", line 1960, in main
+    setup_logging(config, _cli_log_handler, logfile='letsencrypt.log')
+  File "/usr/lib/python2.7/dist-packages/letsencrypt/cli.py", line 1873, in setup_logging
+    config, logfile=logfile, fmt=fmt)
+  File "/usr/lib/python2.7/dist-packages/letsencrypt/cli.py", line 1844, in setup_log_file_handler
+    log_file_path, maxBytes=2 ** 20, backupCount=10)
+  File "/usr/lib/python2.7/logging/handlers.py", line 117, in __init__
+    BaseRotatingHandler.__init__(self, filename, mode, encoding, delay)
+  File "/usr/lib/python2.7/logging/handlers.py", line 64, in __init__
+    logging.FileHandler.__init__(self, filename, mode, encoding, delay)
+  File "/usr/lib/python2.7/logging/__init__.py", line 913, in __init__
+    StreamHandler.__init__(self, self._open())
+  File "/usr/lib/python2.7/logging/__init__.py", line 943, in _open
+    stream = open(self.baseFilename, self.mode)
+IOError: [Errno 13] Permission denied: '/var/log/letsencrypt/letsencrypt.log'
