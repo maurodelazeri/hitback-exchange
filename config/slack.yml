@@ -1,0 +1,9 @@
+staging: &defaults
+  payload:
+    channel: '#hitback'
+    username: minabot
+  token: ~
+  hook_url: https://hitback.slack.com/services/hooks/incoming-webhook?token=
+
+production:
+  <<: *defaults

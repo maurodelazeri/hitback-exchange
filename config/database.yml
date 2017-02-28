@@ -1,0 +1,16 @@
+development: &defaults
+  adapter: mysql2
+  encoding: utf8
+  database: hitback_development
+  username: root
+  password: 5dfa6363287b606b7b863e0fe994234c
+  pool: 10
+  reconnect: true
+
+test:
+  <<: *defaults
+  database: hitback_test
+
+production:
+  <<: *defaults
+  database: hitback_production

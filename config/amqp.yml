@@ -1,0 +1,87 @@
+connect:
+  host: 127.0.0.1
+  port: 5672
+
+exchange:
+  trade:
+    name: hitback.trade
+    type: headers
+  notification:
+    name: hitback.notification
+    type: direct
+  orderbook:
+    name: hitback.orderbook
+    type: fanout
+
+queue:
+  matching:
+    name: hitback.matching
+    durable: true
+  slave_book:
+    name: hitback.orderbook.slave
+    durable: true
+  new_trade:
+    name: hitback.trade.new
+    durable: true
+  order_processor:
+    name: hitback.order.processor
+    durable: true
+  market_ticker:
+    name: hitback.trade.market_ticker
+  pusher_market:
+    name: hitback.pusher.market
+  pusher_member:
+    name: hitback.pusher.member
+  withdraw_coin:
+    name: hitback.withdraw.coin
+  deposit_coin:
+    name: hitback.deposit.coin
+  deposit_coin_address:
+    name: hitback.deposit.coin.address
+    durable: true
+  email:
+    name: hitback.notification.email
+    durable: true
+  sms:
+    name: hitback.notification.sms
+    durable: true
+
+binding:
+  matching:
+    queue: matching
+    clean_start: true
+  slave_book:
+    queue: slave_book
+    exchange: orderbook
+  trade_executor:
+    queue: new_trade
+    manual_ack: true
+  order_processor:
+    queue: order_processor
+    manual_ack: true
+  market_ticker:
+    queue: market_ticker
+    exchange: trade
+  pusher_market:
+    queue: pusher_market
+    exchange: trade
+  pusher_member:
+    queue: pusher_member
+  withdraw_coin:
+    queue: withdraw_coin
+  deposit_coin:
+    queue: deposit_coin
+  deposit_coin_address:
+    queue: deposit_coin_address
+  email_notification:
+    queue: email
+    exchange: notification
+  sms_notification:
+    queue: sms
+    exchange: notification
+
+channel:
+  trade_executor:
+    prefetch: 5
+  order_processor:
+    prefetch: 5

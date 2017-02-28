@@ -1,0 +1,85 @@
+defaults: &defaults
+
+  # sites hosts
+  # session expire seconds
+  # admin role account
+  URL_HOST: market.hitback.us
+  URL_SCHEMA: https
+  SESSION_EXPIRE: 60
+  ADMIN: 'maurodelazeri@gmail.com'
+  TIMEZONE: 'Beijing'
+
+  REDIS_URL: redis://127.0.0.1:6379
+
+  # below settings only in production env
+  # system notify mail settings
+  # --------------------------------------------------------------
+  SMTP_PORT: 587
+  SMTP_DOMAIN: hitback.us
+  SMTP_ADDRESS: smtp.mailgun.org
+  SMTP_USERNAME: postmaster@hitback.us
+  SMTP_PASSWORD: 64a44e16346897c0cbb01e2ce4edd3f0
+  SMTP_AUTHENTICATION: plain # could be plain, login or cram_md5
+
+  SUPPORT_MAIL: support@hitback.us
+  SYSTEM_MAIL_FROM: system@hitback.us
+  SYSTEM_MAIL_TO: group@hitback.us
+  OPERATE_MAIL_TO: support@hitback.us
+
+  # WebSocket Streaming API settings
+  # --------------------------------------------------------------
+  WEBSOCKET_HOST: 0.0.0.0
+  WEBSOCKET_PORT: 8080
+  # Uncomment below to enable secure WebSocket (wss)
+  # WEBSOCKET_SSL_KEY: '/etc/letsencrypt/live/www.hitback.us/privkey.pem'
+  # WEBSOCKET_SSL_CERT: '/etc/letsencrypt/live/www.hitback.us/fullchain.pem'
+
+  # pusher settings
+  # --------------------------------------------------------------
+  # hitback dependence Pusher (http://pusher.com) service
+  # you can change your key for production environment.
+  # we support development key and secret
+  # uncomment below line only development or test
+  #
+  # PUSHER_APP: 65910
+  # PUSHER_KEY: 50d404c35db92d736a57
+  # PUSHER_SECRET: 75d6e6685209cc60cc4d
+
+  PUSHER_APP: 250172
+  PUSHER_KEY: c2dc225e0c94dc284206
+  PUSHER_SECRET: 823488f184dbaa08e483
+  PUSHER_HOST: api.pusherapp.com
+  PUSHER_PORT: 80
+  PUSHER_WS_PORT: 80
+  PUSHER_WSS_PORT: 443
+  PUSHER_ENCRYPTED: true
+
+  # twilio setting
+  # --------------------------------------------------------------
+  # https://github.com/twilio/twilio-ruby
+  #
+  TWILIO_NUMBER: +16464034941
+  TWILIO_SID: ACfec78f6854c828c4b4cfc4074b137e00
+  TWILIO_TOKEN: 506110f7dadf385394fa09e21e972100
+
+  # Third party auth
+
+  # Weibo
+  # --------------------------------------------------------------
+  WEIBO_AUTH: off # on/off
+  WEIBO_KEY: 2589674286
+  WEIBO_SECRET: 0b2e12e414ab7beb04d36312b1ae8c00
+
+  # chat setting
+  # --------------------------------------------------------------
+  # Do you want chat feature in your exchange ?
+  # send mail to community@hitback.com
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
