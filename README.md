@@ -96,35 +96,3 @@ Hitback front-end based Bootstrap 3.0 version and Sass, and you can custom excha
 
 `vars/_custom.css.scss` can overwrite `vars/_basic.css.scss` defined variables
 `layout/_custom.css.scss` can overwrite `layout/_basic.css.scss` and `layoputs/_header.css.scss` style
-
-### Getting Involved
-
-Want to report a bug, request a feature, contribute or translate Hitback?
-
-* Browse our [issues](https://github.com/hitback/hitback/issues), comment on proposals, report bugs.
-* Clone the hitback repo, make some changes according to our development guidelines and issue a pull-request with your changes.
-* Anything you want to tell us please send it to [community@hitback.com](mailto:community@hitback.com)
-* If you need technical support or customization service, contact us: [sales@hitback.com](mailto:sales@hitback.com)
-
-
-### License
-
-Hitback is released under the terms of the MIT license. See [http://hitback.mit-license.org](http://hitback.mit-license.org) for more information.
-
-
-### DONATE
-
-**Every satoshi of your kind donation goes into the ongoing work of making Hitback more awesome.**
-
-**hitback-opensource-donate** address [1HjfnJpQmANtuW7yr1ggeDfyfe1kDK7rm3](https://blockchain.info/address/1HjfnJpQmANtuW7yr1ggeDfyfe1kDK7rm3)
-
-
-### What is Hitback?
-
-[Hitback](http://en.wikipedia.org/wiki/Pixiu) (Chinese: 貔貅) is a Chinese mythical hybrid creature considered to be a very powerful protector to practitioners of Feng Shui.
-
-**[This illustration copyright for Hitback Team]**
-
-![logo](public/hitback.png)
-
-
