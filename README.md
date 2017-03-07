@@ -73,8 +73,13 @@ docker run -p 80:80 -p 18080:18080 -p 443:443 -it -d theoraculo/hitback-exchange
 
 You can interact with Hitback through API:
 
-* [API v2](http://demo.peat.io/documents/api_v2?lang=en)
-* [Websocket API](http://demo.peat.io/documents/websocket_api)
+* [API v2]
+
+Comming soon
+
+* [Websocket API]
+
+Comming soon
 
 Here're some API clients and/or wrappers:
 
