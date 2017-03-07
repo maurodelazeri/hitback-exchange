@@ -35,15 +35,6 @@ You must know what you're doing, there's no shortcut. Please get prepared before
 * Industry standard security out of box.
 * Active community behind.
 * Free and open-source.
-* Created and maintained by [Hitback open-source group](http://peat.io).
-
-
-### Known Exchanges using Hitback
-
-* [Yunbi Exchange](https://yunbi.com) - A crypto-currency exchange funded by BitFundPE
-* [One World Coin](https://oneworldcoin.com)
-* [Bitspark](https://bitspark.io) - Bitcoin Exchange in Hong Kong
-* [MarsX.io](https://acx.io) - Australian Cryptocurrency Exchange
 
 ### Mobile Apps ###
 
