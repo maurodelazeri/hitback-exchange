@@ -1,3 +1,7 @@
+This project has no longer support !
+=====================================
+
+
 An open-source crypto currency exchange
 =====================================
 
